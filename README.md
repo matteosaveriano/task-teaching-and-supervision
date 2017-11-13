@@ -74,8 +74,8 @@ You cannot terminate the Attentional System (```seed_segment```) with CTRL+C. In
 Please acknowledge the authors in any acedemic publication that used parts of these codes.
 ```
 @article{Caccavale2017,
-    title = {Kinesthetic Teaching and Attentional Supervision of Structured Tasks in Human-Robot Interaction},
-    author = {Caccavale, Riccardo and Saveriano, Matteo and Finzi, Alberto and Lee, Dongheui",
+    title = "Kinesthetic Teaching and Attentional Supervision of Structured Tasks in Human-Robot Interaction",
+    author = "Caccavale, Riccardo and Saveriano, Matteo and Finzi, Alberto and Lee, Dongheui",
     journal = "Autonomous Robots",
     year = 2017,
     volume = ,
@@ -88,6 +88,6 @@ Please acknowledge the authors in any acedemic publication that used parts of th
 ## Licence
 This repository contains free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3 as published by the Free Software Foundation.
 
-This code is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+This source code is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with this code. If not, see http://www.gnu.org/licenses/.
