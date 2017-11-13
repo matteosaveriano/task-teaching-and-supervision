@@ -46,11 +46,11 @@ ros-<version>-ar-track-alvar```) installed .
 We prepared a demo version collecting a user demonstration of the prepare coffee task. Data are stored
 into the prepare_coffee.bag file.
 To reproduce the demo execute the following commands in separate shells:
--```roscore```
--```roslaunch Scene_Simulator scene_simulator.launch```
--```rosrun LWR_seed_control learnTask (start the Robot Manager)```
--```rosrun seed_segment seed_segment (start the Attentional System)```
--navigate to the folder _SceneSimulator_ and then type ```rosbag play prepare_coffee.bag --clock``` (playback the recorded data)
+- ```roscore```
+- ```roslaunch Scene_Simulator scene_simulator.launch```
+- ```rosrun LWR_seed_control learnTask (start the Robot Manager)```
+- ```rosrun seed_segment seed_segment (start the Attentional System)```
+- navigate to the folder _SceneSimulator_ and then type ```rosbag play prepare_coffee.bag --clock``` (playback the recorded data)
 
 After typing these commands, you will have a window showing the task structure updates and a
 simulated scene (```/tf``` frames) in Rviz. Note that the frame ```/wsg50_end_link``` represents the end
