@@ -5,9 +5,10 @@ to get started with ROS.
 
 ## Components description
 The framework for multimodal teaching and attentional supervision consists of 3 main components:
--_Attentional System (AS)_: Cognitive control mechanism to orchestrate structured tasks execution.
--_Robot Manager (RM)_: Segmentation, motion primitives learning, motor commands generation.
--_Scene Simulator_: Simulate the robot and the objects in the scene.
+- _Attentional System (AS)_: Cognitive control mechanism to orchestrate structured tasks execution.
+- _Robot Manager (RM)_: Segmentation, motion primitives learning, motor commands generation.
+- _Scene Simulator_: Simulate the robot and the objects in the scene.
+
 The code is written in C++ and organized into ROS nodes.
 
 ## Software Requirements
@@ -15,7 +16,7 @@ The code is developed and tested under _Ubuntu 14.04_ and _ROS Indigo_. All the 
 using _rosbuild_.
 
 ## Installation
-Before starting, make sure to have the forlders _AttentionalSystem_, _RobotManager_ and
+Before starting, make sure to have the forlders _AttentionalSystem_, _RobotManager_, and
 _SceneSimulator_ in your ROS_PACKAGE_PATH (type in a shell ```echo $ROS_PACKAGE_PATH```).
 Make also sure to have Graphviz (```sudo apt-get install graphviz-dev```), Eigen (```sudo
 apt-get install libeigen3-dev```), ARUCO ROS package (```sudo apt-get install
@@ -66,5 +67,5 @@ The Attentional System (AS) and the Robot Manager (RM) communicate over ROS topi
 - ```/seed_stream``` output of the speech recognition (stored in ```prepare_coffee.bag```)
 
 ### NOTES
-You cannot terminate the Attentional System (seed_segment) with CTRL+C. Instead, type
-forget(alive) and press ENTER.
+You cannot terminate the Attentional System (```seed_segment```) with CTRL+C. Instead, type
+```forget(alive)``` and press ENTER.
