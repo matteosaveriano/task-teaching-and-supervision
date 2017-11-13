@@ -66,6 +66,14 @@ The Attentional System (AS) and the Robot Manager (RM) communicate over ROS topi
 - ```/object_dists``` robot-object distances
 - ```/seed_stream``` output of the speech recognition (stored in ```prepare_coffee.bag```)
 
-### NOTES
+### Notes
 You cannot terminate the Attentional System (```seed_segment```) with CTRL+C. Instead, type
 ```forget(alive)``` and press ENTER.
+
+## Licence
+
+This repository contains free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3 as published by the Free Software Foundation.
+
+This code is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this code. If not, see http://www.gnu.org/licenses/.
