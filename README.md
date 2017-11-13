@@ -20,7 +20,7 @@ Before starting, make sure to have the forlders _AttentionalSystem_, _RobotManag
 _SceneSimulator_ in your ROS_PACKAGE_PATH (type in a shell ```echo $ROS_PACKAGE_PATH```).
 Make also sure to have Graphviz (```sudo apt-get install graphviz-dev```), Eigen (```sudo
 apt-get install libeigen3-dev```), ARUCO ROS package (```sudo apt-get install
-ros-<version>-ar-track-alvar```) installed .
+ros-<version>-ar-track-alvar```) installed.
 - _AttentionalSystem_:
   - Open a terminal shell
   - Navigate to the folder Attentional_System
