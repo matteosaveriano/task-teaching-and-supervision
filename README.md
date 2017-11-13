@@ -12,7 +12,7 @@ The framework for multimodal teaching and attentional supervision consists of 3 
 The code is written in C++ and organized into ROS nodes.
 
 ## Software Requirements
-The code is developed and tested under _Ubuntu 14.04_ and _ROS Indigo_. All the nodes are compiled
+The code is developed and tested under _Ubuntu 14.04_ and _ROS Indigo_. All nodes are compiled
 using _rosbuild_.
 
 ## Installation
