@@ -20,27 +20,27 @@ _SceneSimulator_ in your ROS_PACKAGE_PATH (type in a shell ```echo $ROS_PACKAGE_
 Make also sure to have Graphviz (```sudo apt-get install graphviz-dev```), Eigen (```sudo
 apt-get install libeigen3-dev```), ARUCO ROS package (```sudo apt-get install
 ros-<version>-ar-track-alvar```) installed .
--_AttentionalSystem_:
- -Open a terminal shell
- -Navigate to the folder Attentional_System
- -```cd Attentional_system/seed_segment/build```
- -```cmake ..```
- -```rosmake```
--_RobotManager_:
- -Open a terminal shell
- -Navigate to the folder _RobotManager_
- -```cd Robot_Manager/kuka_seed_commands/build```
- -```cmake ..```
- -```rosmake```
- -```cd Robot_Manager/LWR_seed_control/build```
- -```cmake ..```
- -```rosmake```
--_Scene_Simulator_:
- -Open a terminal shell
- -Navigate to the folder _SceneSimulator_
- -```cd Scene_Simulator/build```
- -```cmake ..```
- -```rosmake```
+- _AttentionalSystem_:
+  - Open a terminal shell
+  - Navigate to the folder Attentional_System
+  - ```cd Attentional_system/seed_segment/build```
+  - ```cmake ..```
+  - ```rosmake```
+- _RobotManager_:
+  - Open a terminal shell
+  - Navigate to the folder _RobotManager_
+  - ```cd Robot_Manager/kuka_seed_commands/build```
+  - ```cmake ..```
+  - ```rosmake```
+  - ```cd Robot_Manager/LWR_seed_control/build```
+  - ```cmake ..```
+  - ```rosmake```
+- _Scene_Simulator_:
+  - Open a terminal shell
+  - Navigate to the folder _SceneSimulator_
+  - ```cd Scene_Simulator/build```
+  - ```cmake ..```
+  - ```rosmake```
 
 ## Usage
 We prepared a demo version collecting a user demonstration of the prepare coffee task. Data are stored
