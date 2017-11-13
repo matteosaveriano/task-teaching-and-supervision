@@ -1,0 +1,85 @@
+<!-- Formalism description -->
+<!-- ObjectsList - List of known objects -->
+<!-- <object> // object structure
+        <name value="hummer" />    // Object name        - std::string
+        <id value="0" />           // Object (unique) id - int
+        <trayId value="0" />       // Tray (unique) id
+        <graspForce value="0.0"/>  // Force (N) needed to grasp the object - double
+        <takePosition x="0.0" y="0.0" z="0.0"/>     // Related to the QR code (object) 3D position
+		<takeOrientation x="0.0" y="0.0" z="0.0"/>  // Related to the QR code (object) 3D orientation (Euler angles zyx)
+		<placePosition x="0.0" y="0.0" z="0.0"/>    // Related to the QR code (tray) 3D position
+		<placeOrientation x="0.0" y="0.0" z="0.0"/> // Related to the QR code (tray) 3D orientation (Euler angles zyx)
+     </object>
+
+-0.4072" y="0.3997" z="0.04"
+
+sd: take -344.18 390  6.9   165.47  -7.41   178.49
+    rel  -371.7  576.48  70.58   140.93   -6.28   177.52
+
+tape: take -434.42 274.78  17.55  140.44  -4.20   179
+      rel  -495.38   88.38   49.26   143.45  -8.02  179 
+
+metro: take -213 332.86 4.44  138.36 11.01 168.95
+       rel -379.44  528.72  57.1  143.42  6.74  165.95 
+
+-->
+<? xml version="1.0" ?> 
+<ObjectsList>
+    <object>
+        <name value="spoon" />
+        <id value="3" />
+        <trayId value="0" />
+        <graspForce value="0.0"/>
+        <preTakePosition x="0.0" y="0.0" z="0.0"/>     
+		<preTakeOrientation x="0.0" y="0.0" z="0.0"/>  
+		<prePlacePosition x="0.0" y="0.0" z="0.0"/>    
+		<prePlaceOrientation x="0.0" y="0.0" z="0.0"/>
+        <takePosition x="0.0" y="0.0" z="0.0"/>     
+		<takeOrientation x="0.0" y="0.0" z="0.0"/>  
+		<placePosition x="0.0" y="0.0" z="0.0"/>    
+		<placeOrientation x="0.0" y="0.0" z="0.0"/>
+        <postTakePosition x="0.0" y="0.0" z="0.0"/>     
+		<postTakeOrientation x="0.0" y="0.0" z="0.0"/>  
+		<postPlacePosition x="0.0" y="0.0" z="0.0"/>    
+		<postPlaceOrientation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object>
+        <name value="water" />
+        <id value="4" />
+        <trayId value="0" />
+        <graspForce value="0.0"/>
+        <preTakePosition x="0.0" y="0.0" z="0.0"/>     
+		<preTakeOrientation x="0.0" y="0.0" z="0.0"/>  
+		<prePlacePosition x="0.0" y="0.0" z="0.0"/>    
+		<prePlaceOrientation x="0.0" y="0.0" z="0.0"/>
+        <takePosition x="0.0" y="0.0" z="0.0"/>     
+		<takeOrientation x="0.0" y="0.0" z="0.0"/>  
+		<placePosition x="0.0" y="0.0" z="0.0"/>    
+		<placeOrientation x="0.0" y="0.0" z="0.0"/>
+        <postTakePosition x="0.0" y="0.0" z="0.0"/>     
+		<postTakeOrientation x="0.0" y="0.0" z="0.0"/>  
+		<postPlacePosition x="0.0" y="0.0" z="0.0"/>    
+		<postPlaceOrientation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object>
+        <name value="coffee" />
+        <id value="5" />
+        <trayId value="0" />
+        <graspForce value="0.0"/>
+        <preTakePosition x="0.0" y="0.0" z="0.0"/>     
+		<preTakeOrientation x="0.0" y="0.0" z="0.0"/>  
+		<prePlacePosition x="0.0" y="0.0" z="0.0"/>    
+		<prePlaceOrientation x="0.0" y="0.0" z="0.0"/>
+        <takePosition x="0.0" y="0.0" z="0.0"/>     
+		<takeOrientation x="0.0" y="0.0" z="0.0"/>  
+		<placePosition x="0.0" y="0.0" z="0.0"/>    
+		<placeOrientation x="0.0" y="0.0" z="0.0"/>
+        <postTakePosition x="0.0" y="0.0" z="0.0"/>     
+		<postTakeOrientation x="0.0" y="0.0" z="0.0"/>  
+		<postPlacePosition x="0.0" y="0.0" z="0.0"/>    
+		<postPlaceOrientation x="0.0" y="0.0" z="0.0"/>
+    </object>
+</ObjectsList>
+
+
+

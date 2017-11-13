@@ -1,0 +1,27 @@
+<package>
+  <description brief="kuka_seed_coomands">
+
+     Communication between KUKA LWR and UNINA's seed
+
+  </description>
+  <author>Matteo Saveriano</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/kuka_seed_coomands</url>
+  <depend package="roscpp"/>
+  <depend package="rospy"/>
+  <depend package="std_msgs"/>
+  <depend package="roslib"/>
+  <depend package="tf"/>
+  <depend package="geometry_msgs"/>
+  <depend package="ar_track_alvar_msgs"/>
+
+  <!-- Eigen3 support -->
+  <export>
+    <cpp cflags="`pkg-config --cflags eigen3` -I${prefix}/include `rosboost-cfg --cflags`"
+         lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib "/>
+  </export>
+
+</package>
+
+
