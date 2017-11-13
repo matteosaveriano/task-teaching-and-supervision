@@ -57,7 +57,7 @@ After typing these commands, you will have a window showing the task structure u
 simulated scene (```/tf``` frames) in Rviz. Note that the frame ```/wsg50_end_link``` represents the end
 effector of the robot.
 
-When prepare_coffee.bag ends you have the full structure and low-level motion primitives learned. The robot starts to execute the task autonomously (see the frame ```/wsg50_end_link``` in Rviz). You have to press the Reset button in Rviz (bottom left) to see the end effector frame moving.
+When ```prepare_coffee.bag``` ends you have the full structure and low-level motion primitives learned. The robot starts to execute the task autonomously (see the frame ```/wsg50_end_link``` in Rviz). You have to press the Reset button in Rviz (bottom left) to see the end effector frame moving.
 
 ### ROS Topics
 The Attentional System (AS) and the Robot Manager (RM) communicate over ROS topics:
@@ -70,8 +70,22 @@ The Attentional System (AS) and the Robot Manager (RM) communicate over ROS topi
 You cannot terminate the Attentional System (```seed_segment```) with CTRL+C. Instead, type
 ```forget(alive)``` and press ENTER.
 
-## Licence
+## Reference
+Please acknowledge the authors in any acedemic publication that used parts of these codes.
+```
+@article{Caccavale2017,
+    title = {Kinesthetic Teaching and Attentional Supervision of Structured Tasks in Human-Robot Interaction},
+    author = {Caccavale, Riccardo and Saveriano, Matteo and Finzi, Alberto and Lee, Dongheui",
+    journal = "Autonomous Robots",
+    year = 2017,
+    volume = ,
+    number = ,
+    pages = "",
+    month = "",
+}
+```
 
+## Licence
 This repository contains free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3 as published by the Free Software Foundation.
 
 This code is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
