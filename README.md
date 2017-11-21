@@ -77,9 +77,9 @@ Please acknowledge the authors in any acedemic publication that used parts of th
     title = "Kinesthetic Teaching and Attentional Supervision of Structured Tasks in Human-Robot Interaction",
     author = "Caccavale, Riccardo and Saveriano, Matteo and Finzi, Alberto and Lee, Dongheui",
     journal = "Autonomous Robots",
-    year = 2017,
-    volume = ,
-    number = ,
+    year = "2017",
+    volume = "",
+    number = "",
     pages = "",
     month = "",
 }
