@@ -24,22 +24,30 @@ ros-<version>-ar-track-alvar```) installed.
 - _AttentionalSystem_:
   - Open a terminal shell
   - Navigate to the folder Attentional_System
-  - ```cd Attentional_system/seed_segment/build```
+  - ```cd Attentional_system/seed_segment```
+  - ```mkdir build```
+  - ```cd build```
   - ```cmake ..```
   - ```rosmake```
 - _RobotManager_:
   - Open a terminal shell
   - Navigate to the folder _RobotManager_
-  - ```cd Robot_Manager/kuka_seed_commands/build```
+  - ```cd Robot_Manager/kuka_seed_commands```
+  - ```mkdir build```
+  - ```cd build```
   - ```cmake ..```
   - ```rosmake```
-  - ```cd Robot_Manager/LWR_seed_control/build```
+  - ```cd Robot_Manager/LWR_seed_control```
+  - ```mkdir build```
+  - ```cd build```
   - ```cmake ..```
   - ```rosmake```
 - _Scene_Simulator_:
   - Open a terminal shell
   - Navigate to the folder _SceneSimulator_
-  - ```cd Scene_Simulator/build```
+  - ```cd Scene_Simulator```
+  - ```mkdir build```
+  - ```cd build```
   - ```cmake ..```
   - ```rosmake```
 
