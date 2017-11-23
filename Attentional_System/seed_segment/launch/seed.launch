@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+
+
+<launch>
+
+	<node pkg="seed_2_0" type="seed_2_0" name="seed_2_0" output="screen" >
+		<param name="eclipse_prolog_path" type="string" value="/home/mfiore/devel/src/eclipseclp/" />
+		<!--<param name="hl_goal" type="string" value="giveTo(bracket1,location1,human)" />	-->
+		<param name="hl_goal" type="string" value="getObj(bracket1)" />
+	</node>
+
+
+</launch>
