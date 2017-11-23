@@ -1,0 +1,21 @@
+0	[<s>]	sil
+1	[</s>]	sil
+2	[TEA]	t iy
+2	[COFFEE]	k aa f iy
+2	[SUGAR]	sh uh g er
+2	[MILK]	m ih l k
+2	[CUP]	k ah p
+2	[WATER]	w ao dx er
+3	[TAKE]	t ey k
+4	[GIVE]	g ih v
+5	[TEACH]	t iy ch
+5	[PLACE]	p l ey s
+5	[NO]	n ow
+5	[STOP]	s t aa p
+5	[DONE]	d ah n
+5	[OPEN]	ow p ax n
+5	[CLOSE]	k l ow s
+5	[REPEAT]	r ix p iy t
+6	[SHUT]	sh ah t
+7	[DOWN]	d aw n
+8	[ROBOTS]	r ow b aa t s

@@ -1,0 +1,60 @@
+% NS_B
+<s> sil
+
+% NS_E
+</s> sil
+
+% ME
+ME  m iy
+
+% IT
+IT  ih t
+
+% OBJ
+GLUE  g l uw
+HAMMERS  hh ae m er z
+SCREW  s k r uw
+TAPE  t ey p
+
+% YARD
+YARD  y aa r d
+
+% STICK
+STICK  s t ih k
+
+% SCREW
+SCREW  s k r uw
+
+% DRIVER
+DRIVER  d r ay v er
+
+% TAKE
+TAKE  t ey k
+
+% GIVE
+GIVE  g ih v
+
+% MODE
+MODE  m ow d
+
+% BOOL
+ON  aa n
+OFF  ao f
+
+% VERB
+LEAVES  l iy v z
+NO  n ow
+STOP  s t aa p
+PLACE  p l ey s
+TEACH  t iy ch
+REPEATILO  r ix p iy t
+DONE  d ah n
+OK  ow k ey
+CLOSES  k l ow s
+OPENS  ow p ax n
+
+% REC
+RECOGNIZE  r eh k ax g n ay z
+
+% FIRST
+ROBOTS  r ow b aa t s

@@ -1,0 +1,39 @@
+% NS_B
+<s> sil
+
+% NS_E
+</s> sil
+
+% ME
+ME  m iy
+
+% IT
+IT  ih t
+
+% OBJ
+GLUE  g l uw
+CLOTH  k l ao th
+PLATE  p l ey t
+SCREW  s k r uw
+
+% SCREW
+SCREW  s k r uw
+
+% DRIVER
+DRIVER  d r ay v er
+
+% TAKE
+TAKE  t ey k
+
+% GIVE
+GIVE  g ih v
+
+% VERB
+SEARCH  s er ch
+LEAVES  l iy v z
+NO  n ow
+STOP  s t aa p
+FOLLOW  f aa l ow
+
+% FIRST
+COMPUTER  k ax m p y uw dx er

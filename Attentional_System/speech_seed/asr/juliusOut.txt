@@ -1,0 +1,2 @@
+STAT: include config: /home/erik/ROS/VoiceAndGesture/SHERPA_ASR/julian.jconf
+ERROR: m_options: wrong argument: "/home/erik/ROS/VoiceAndGesture/SHERPA_ASR/recFiles"

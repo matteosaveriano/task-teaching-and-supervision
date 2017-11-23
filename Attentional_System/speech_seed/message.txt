@@ -1,0 +1,2 @@
+sentence1: <s> SEARCH </s>
+cmscore1: 1.000 0.486 1.000

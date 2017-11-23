@@ -1,0 +1,5 @@
+#!/bin/sh
+p_name=`pidof -x speech_rec`
+while inotifywait -e moved_to asr/recFiles ; do
+  	kill -10 $p_name
+done
