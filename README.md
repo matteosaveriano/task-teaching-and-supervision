@@ -60,6 +60,7 @@ We prepared a demo version collecting a user demonstration of the prepare coffee
 into the prepare_coffee.bag file.
 To reproduce the demo execute the following commands in separate shells:
 - ```roscore```
+- ```rosparam set use_sim_time true``` (no troubles with old /tf data)
 - ```roslaunch Scene_Simulator scene_simulator.launch```
 - ```rosrun LWR_seed_control learnTask (start the Robot Manager)```
 - ```rosrun seed_segment seed_segment (start the Attentional System)```
