@@ -30,9 +30,13 @@ ros-<version>-ar-track-alvar```) installed.
   - ```cd ..```
   - ```rosmake```
   
-_NOTE:_  The ```Makefile``` assumes that ```libgmp.so.3``` is in ```/usr/lib```. Otherwise, the _Attentional System_ node does not compile, or you will experience a run-time error like: ```error while loading shared libraries: libgmp.so.3: cannot open shared object file: No such file or directory```. This issue can be solved by making a simbolic link to your system version of ```libgmp.so.3```:
-  - Open a terminal shell
-  - ```sudo ln -s <path-to-libgmp>/<libgmp-system-version> /usr/lib/libgmp.so.3```, for example, assuming that ```libgmp.so.10``` is installed in ```/usr/lib64```, you will type: ```sudo ln -s /usr/lib64/libgmp.so.10 /usr/lib/libgmp.so.3```.
+_NOTE:_  The ```Makefile``` assumes that ```libgmp.so.3``` is in ```/usr/lib```. Otherwise, the _Attentional System_ node does not compile, or you will experience a run-time error like: ```error while loading shared libraries: libgmp.so.3: cannot open shared object file: No such file or directory```. This issue can be solved by making a simbolic link to your system version of ```libgmp.so.3```.
+  
+In a terminal shell type: 
+  - ```sudo ln -s <path-to-libgmp>/<libgmp-system-version> /usr/lib/libgmp.so.3```
+  
+For example, assuming that ```libgmp.so.10``` is installed in ```/usr/lib64```, you will type:
+  - ```sudo ln -s /usr/lib64/libgmp.so.10 /usr/lib/libgmp.so.3```.
 - _RobotManager_:
   - Open a terminal shell
   - Navigate to the folder _RobotManager_
