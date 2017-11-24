@@ -18,8 +18,7 @@ using _rosbuild_.
 ## Installation
 Before starting, make sure to have the forlders _AttentionalSystem_, _RobotManager_, and
 _SceneSimulator_ in your ROS_PACKAGE_PATH (type in a shell ```echo $ROS_PACKAGE_PATH```).
-Make also sure to have Graphviz (```sudo apt-get install graphviz-dev```), Eigen (```sudo
-apt-get install libeigen3-dev```), ARUCO ROS package (```sudo apt-get install
+Make also sure to have Graphviz (```sudo apt-get install graphviz-dev```), Gmp (```sudo apt-get install libgmp-dev```), Eigen (```sudo apt-get install libeigen3-dev```), ARUCO ROS package (```sudo apt-get install
 ros-<version>-ar-track-alvar```) installed.
 - _AttentionalSystem_:
   - Open a terminal shell
@@ -30,6 +29,10 @@ ros-<version>-ar-track-alvar```) installed.
   - ```cmake ..```
   - ```cd ..```
   - ```rosmake```
+### NOTE
+  The ```Makefile``` assumes that ```libgmp.so.3``` is in ```/usr/lib```. Otherwise, the _Attentional System_ node does not compile, or you will experience a run-time error like: ```error while loading shared libraries: libgmp.so.3: cannot open shared object file: No such file or directory```. This issue can be solved by making a simbolic link to your system version of ```libgmp.so.3```:
+  - Open a terminal shell
+  - ```sudo ln -s <path-to-libgmp>/<libgmp-system-version> /usr/lib/libgmp.so.3```, for example, assuming that ```libgmp.so.10``` is installed in ```/usr/lib64```, you will type: ```sudo ln -s /usr/lib64/libgmp.so.10 /usr/lib/libgmp.so.3```.
 - _RobotManager_:
   - Open a terminal shell
   - Navigate to the folder _RobotManager_
