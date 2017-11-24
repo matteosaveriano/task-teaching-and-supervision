@@ -28,6 +28,7 @@ ros-<version>-ar-track-alvar```) installed.
   - ```mkdir build```
   - ```cd build```
   - ```cmake ..```
+  - ```cd ..```
   - ```rosmake```
 - _RobotManager_:
   - Open a terminal shell
@@ -36,11 +37,13 @@ ros-<version>-ar-track-alvar```) installed.
   - ```mkdir build```
   - ```cd build```
   - ```cmake ..```
+  - ```cd ..```
   - ```rosmake```
   - ```cd Robot_Manager/LWR_seed_control```
   - ```mkdir build```
   - ```cd build```
   - ```cmake ..```
+  - ```cd ..```
   - ```rosmake```
 - _Scene_Simulator_:
   - Open a terminal shell
@@ -49,6 +52,7 @@ ros-<version>-ar-track-alvar```) installed.
   - ```mkdir build```
   - ```cd build```
   - ```cmake ..```
+  - ```cd ..```
   - ```rosmake```
 
 ## Usage
