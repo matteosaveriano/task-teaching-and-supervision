@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Dialog SYSTEM "/home/lorenzo/Scrivania/file.dtd"> 
+<Dialog label="Cane_Riporto">
+    <!--i nodi devono esser ordinati per id,la numerazione parte da 0-->
+    <Node ID="0" label="Start" startingP="1">
+                        <Observ name="StartUp" P="1">
+                            <MachineAction name="Greet">
+                                <Link_To ID="1">0.6</Link_To>
+                                <Link_To ID="2">0.4</Link_To>
+			    </MachineAction>
+                        </Observ>
+    </Node>
+    <Node ID="1" label="Avvicinati" >
+			<Observ name="Vieni_qui" P="0.5">
+                            <MachineAction name="Avvicinati">
+                                <Link_To ID="2">1</Link_To>
+                          </MachineAction>
+                        </Observ>
+			<Observ name="Avvicinati" P="0.5">
+                            <MachineAction name="Avvicinati">
+                                <Link_To ID="2">1</Link_To>
+                          </MachineAction>
+                        </Observ>			
+                       		
+    </Node>
+     <Node ID="2" label="Prendi palmo" >
+			<Observ name="Prendi" P="1">
+                            <MachineAction name="Idle">
+                                <Link_To ID="3">1</Link_To>
+                          </MachineAction>
+                        </Observ>
+    </Node>	    
+    <Node ID="3" label="Mano protesa" >
+			<Observ name="Mano_Palmo" P="1">
+                            <MachineAction name="Prendi palla dal palmo">
+                                <Link_To ID="4">1</Link_To>
+                          </MachineAction>
+                        </Observ>
+    </Node>
+    <Node ID="4" label="Posa la palla" >
+			<Observ name="Cerca" P="1">
+                            <MachineAction name="Cerca un bidone">
+                                <Link_To ID="1">0.50</Link_To>
+				<Link_To ID="2">0.50</Link_To>
+                               
+                            </MachineAction>
+                        </Observ>			
+
+
+    </Node> 
+</Dialog>

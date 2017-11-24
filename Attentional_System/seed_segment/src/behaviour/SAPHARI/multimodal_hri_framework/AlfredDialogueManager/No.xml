@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialog label="No">
+    <!--i nodi devono esser ordinati per id,la numerazione parte da 0-->
+    <Node ID="0" label="wait_for_no">
+                        <Observ name="-" P="1">
+                            <MachineAction name="*">
+                                <Link_To ID="1">1</Link_To>
+				</MachineAction>
+                        </Observ>
+    </Node>
+    <Node ID="1" label="No" >
+			<Observ name="No" P="1">
+                            <MachineAction name="Deny">
+                            </MachineAction>
+                        </Observ>			
+    </Node>
+   
+</Dialog>

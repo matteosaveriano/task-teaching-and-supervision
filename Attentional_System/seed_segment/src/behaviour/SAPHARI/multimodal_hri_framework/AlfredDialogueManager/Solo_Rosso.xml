@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Dialog SYSTEM "/home/lorenzo/Scrivania/file.dtd"> 
+<Dialog label="Solo_Rosso">
+    <!--i nodi devono esser ordinati per id,la numerazione parte da 0-->
+    <Node ID="0" label="Start" startingP="1">
+                        <Observ name="StartUp" P="1">
+                            <MachineAction name="Greet">
+                                <Link_To ID="1">0.6</Link_To>
+                                <Link_To ID="2">0.4</Link_To>
+			    </MachineAction>
+                        </Observ>
+    </Node>
+    <Node ID="1" label="Cerca Rossa" >
+			<Observ name="Prendi" P="0.3">
+                            <MachineAction name="Cerca_Rossa">
+                                <Link_To ID="4">1</Link_To>
+                          </MachineAction>
+                        </Observ>
+			<Observ name="Cerca" P="0.3">
+                            <MachineAction name="Cerca_Rossa">
+                                <Link_To ID="4">1</Link_To>
+                          </MachineAction>
+                        </Observ>			
+                        <Observ name="Cerca_Rossa" P="0.4">
+                            <MachineAction name="Cerca_Rossa">
+                                <Link_To ID="4">1</Link_To>
+                          </MachineAction>
+                        </Observ>			
+
+    </Node>
+    <Node ID="2" label="Prendi su Indicazioni" >
+			<Observ name="Prendi" P="1">
+                            <MachineAction name="Chiedi quale palla?">
+                                <Link_To ID="3">1</Link_To>
+                          </MachineAction>
+                        </Observ>
+    </Node>	    
+    <Node ID="3" label="Indicazione palla" >
+			<Observ name="Indica" P="1">
+                            <MachineAction name="Prendi palla coordinate (x,y)">
+                                <Link_To ID="4">1</Link_To>
+                          </MachineAction>
+                        </Observ>
+    </Node>
+    <Node ID="4" label="Posa la palla" >
+			<Observ name="Cerca" P="0.6">
+                            <MachineAction name="Cerca un bidone">
+                                <Link_To ID="1">0.45</Link_To>
+				<Link_To ID="2">0.45</Link_To>
+	                        <External_Link_To DF="Solo_Giallo" ID="1">0.05</External_Link_To>
+	                        <External_Link_To DF="Solo_Giallo" ID="2">0.05</External_Link_To>
+                                <External_Link_To DF="Cane_Riporto" ID="1">0.025</External_Link_To>
+	                        <External_Link_To DF="Cane_Riporto" ID="2">0.025</External_Link_To>
+                            </MachineAction>
+                        </Observ>			
+                        <Observ name="Mostra" P="0.2">
+                            <MachineAction name="Mostra">
+                                <Link_To ID="4">1</Link_To>
+                            </MachineAction>
+                        </Observ>
+ 			<Observ name="Posa" P="0.2">
+                            <MachineAction name="Posa">
+ 				<Link_To ID="1">0.45</Link_To>
+				<Link_To ID="2">0.45</Link_To>
+	                        <External_Link_To DF="Solo_Giallo" ID="1">0.025</External_Link_To>
+	                        <External_Link_To DF="Solo_Giallo" ID="2">0.025</External_Link_To>
+				<External_Link_To DF="Cane_Riporto" ID="1">0.025</External_Link_To>
+	                        <External_Link_To DF="Cane_Riporto" ID="2">0.025</External_Link_To>
+                              </MachineAction>
+                        </Observ>
+
+    </Node>
+    
+</Dialog>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialog label="ChoiceAmong2">
+    <!--i nodi devono esser ordinati per id,la numerazione parte da 0-->
+    <Node ID="0" label="wait_for">
+                        <Observ name="-" P="1">
+                            <MachineAction name="*">
+                                <Link_To ID="1">0.33333</Link_To>
+                                <Link_To ID="2">0.33333</Link_To>
+                                <Link_To ID="3">0.33333</Link_To>
+				</MachineAction>
+                        </Observ>
+    </Node>
+    <Node ID="1" label="First" >
+			<Observ name="Prima" P="1">
+                            <MachineAction name="Confirm">
+                            </MachineAction>
+                        </Observ>			
+    </Node>
+   <Node ID="2" label="Second" >
+			<Observ name="Seconda" P="1">
+                            <MachineAction name="Deny1Hyp">
+                            </MachineAction>
+                        </Observ>			
+    </Node>
+  <Node ID="3" label="NoOne" >
+			<Observ name="Nessuna" P="1">
+                            <MachineAction name="Deny2Hyp">
+                            </MachineAction>
+                        </Observ>			
+    </Node>
+</Dialog>

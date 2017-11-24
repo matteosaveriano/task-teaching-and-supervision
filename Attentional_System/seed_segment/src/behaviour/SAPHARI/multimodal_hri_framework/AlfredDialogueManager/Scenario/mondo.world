@@ -1,0 +1,99 @@
+include "robot.inc"
+include "reperti.inc"
+
+# size of the world in meters
+
+
+# set the resolution of the underlying raytrace model in meters
+resolution 0.01
+
+# update the screen every 10ms (we need fast update for the stest demo)
+gui_interval 10
+
+# configure the GUI window
+window
+( 
+  size [ 1364.000 690.000 ] 
+  center [1.757 -1.315] 
+  scale 24.273 # size of each bitmap pixel in metres
+)
+
+define floorplan model(
+
+# sombre, sensible, artistic
+	color "gray30"
+
+# most maps will need a bounding box
+	boundary 1
+	gui_nose 0
+	gui_grid 0
+	gui_move 1
+	gui_outline 0
+	gripper_return 0
+	fiducial_return 0
+	ranger_return 1
+	blob_return 1
+
+)
+floorplan(
+bitmap "mappa.jpg"
+size [20.000 20.000 1.000]
+)
+
+robot (
+	name "bot"
+	color "DarkBlue"
+)
+
+
+
+
+#qui sono inseriti i reperti
+
+reperti(
+name "reperto1"
+size [0.400 0.400 0.400]
+pose [-3.493 6.361 0 0]
+)
+
+reperti(
+name "reperto2"
+size [0.400 0.400 0.400]
+pose [-8.338 1.982 0 0]
+)
+
+reperti(
+name "reperto3"
+size [0.400 0.400 0.400]
+pose [-8.329 -3.713 0 0]
+)
+
+reperti(
+name "reperto4"
+size [0.400 0.400 0.400]
+pose [-2.178 -5.763 0 0]
+)
+
+reperti(
+name "reperto5"
+size [0.400 0.400 0.400]
+pose [8.089 -3.247 0 0]
+)
+
+reperti(
+name "reperto6"
+size [0.400 0.400 0.400]
+pose [2.270 -6.240 0 0]
+)
+
+reperti(
+name "reperto7"
+size [0.400 0.400 0.400]
+pose [7.422 2.939 0 0]
+)
+
+reperti(
+name "reperto8"
+size [0.400 0.400 0.400]
+pose [2.229 6.397 0 0]
+)

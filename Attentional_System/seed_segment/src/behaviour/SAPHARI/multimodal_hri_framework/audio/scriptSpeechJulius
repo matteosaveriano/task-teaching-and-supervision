@@ -1,0 +1,8 @@
+#!/bin/sh
+ #echo "1 SoX Sound Exchange - Convert WAV to FLAC with 16000" 
+sox -r 44100 -b 16 -e signed-integer -c 1 $1 \/home\/hargalaten\/Scrivania\/ros_sources\/roseed\/src\/SEED\/audio\/message.wav rate 16k 
+ padsp julius-4.3.1 -input rawfile -filelist \/home\/hargalaten\/Scrivania\/ros_sources\/roseed\/src\/asr\/filelist.txt -C  \/home\/hargalaten\/Scrivania\/ros_sources\/roseed\/src\/asr\/julian.jconf -nolog 2> /dev/null | grep 'sentence\|cmscore' > \/home\/hargalaten\/Scrivania\/ros_sources\/roseed\/src\/SEED\/message.txt
+ #echo "5 Show Text "
+ cat \/home\/hargalaten\/Scrivania\/ros_sources\/roseed\/src\/SEED\/message.txt
+
+#

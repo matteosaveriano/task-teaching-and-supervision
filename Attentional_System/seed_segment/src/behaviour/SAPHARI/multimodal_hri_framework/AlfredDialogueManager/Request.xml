@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialog label="Request">
+    <!--i nodi devono esser ordinati per id,la numerazione parte da 0-->
+    <Node ID="0" label="Request">
+                        <Observ name="-" P="1">
+                            <MachineAction name="*">
+                                <Link_To ID="1">0.5</Link_To>
+                                <Link_To ID="2">0.5</Link_To>
+                                <!--<Link_To ID="2">0.2</Link_To>-->
+                                <!--<External_Link_To DF="Second" ID="1">1.0</External_Link_To>-->
+			    </MachineAction>
+                        </Observ>
+    </Node>
+    <Node ID="1" label="Si" >
+			<Observ name="Si" P="1">
+                            <MachineAction name="Confirm">
+                          </MachineAction>
+                        </Observ>			
+    </Node>
+    <Node ID="2" label="No" >
+			<Observ name="No" P="1">
+                            <MachineAction name="Deny1Hyp">
+                           </MachineAction>
+                        </Observ>			
+    </Node>
+   
+</Dialog>

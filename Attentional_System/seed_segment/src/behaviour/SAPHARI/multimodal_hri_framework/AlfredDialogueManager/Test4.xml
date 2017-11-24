@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Dialog SYSTEM "/home/lorenzo/Scrivania/file.dtd"> 
+ <!--In questa situatione il robot raccoglie solo palline gialle-->
+<Dialog label="Seq">
+    <!--i nodi devono esser ordinati per id,la numerazione parte da 0-->
+    <Node ID="0" label="Start" startingP="1">
+                        <Observ name="StartUp" P="1">
+                            <MachineAction name="Greet">
+                                <Link_To ID="1">0.2</Link_To>
+                                <Link_To ID="2">0.2</Link_To>
+                                <Link_To ID="3">0.2</Link_To>
+                                <Link_To ID="4">0.2</Link_To>
+                                <Link_To ID="5">0.2</Link_To>
+			    </MachineAction>
+                        </Observ>
+    </Node>
+    <Node ID="1" label="" >
+			<Observ name="Mostra" P="1">
+                            <MachineAction name="Wait">
+                                <Link_To ID="6">1</Link_To>
+                          </MachineAction>
+                        </Observ>
+			
+    </Node>
+<Node ID="2" label="" >
+			<Observ name="Cerca" P="1">
+                            <MachineAction name="Wait">
+                                <Link_To ID="7">1</Link_To>
+                          </MachineAction>
+                        </Observ>
+			
+    </Node>
+<Node ID="3" label="" >
+			<Observ name="Avvicinati" P="1">
+                            <MachineAction name="Wait">
+                                <Link_To ID="8">1</Link_To>
+                          </MachineAction>
+                        </Observ>
+			
+    </Node>
+    
+    <Node ID="4" label="" >
+			<Observ name="Cammina" P="1">
+                            <MachineAction name="Wait">
+                                <Link_To ID="9">1</Link_To>
+                          </MachineAction>
+                        </Observ>
+			
+    </Node>
+<Node ID="5" label="" >
+			<Observ name="Indica" P="1">
+                            <MachineAction name="Wait">
+                                <Link_To ID="10">1</Link_To>
+                          </MachineAction>
+                        </Observ>
+			
+    </Node>
+<Node ID="6" label="" >
+			<Observ name="Prendi" P="1">
+                            <MachineAction name="Wait">
+                                <Link_To ID="11">1</Link_To>
+                          </MachineAction>
+                        </Observ>
+			
+    </Node>
+    <Node ID="7" label="" >
+			<Observ name="Indica" P="1">
+                            <MachineAction name="Wait">
+                                <Link_To ID="12">1</Link_To>
+                          </MachineAction>
+                        </Observ>
+			
+    </Node>
+    <Node ID="8" label="" >
+			<Observ name="Cammina" P="1">
+                            <MachineAction name="Wait">
+                                <Link_To ID="13">1</Link_To>
+                          </MachineAction>
+                        </Observ>
+			
+    </Node>
+    <Node ID="9" label="" >
+			<Observ name="Idle" P="1">
+                            <MachineAction name="Wait">
+                                <Link_To ID="14">1</Link_To>
+                          </MachineAction>
+                        </Observ>
+			
+    </Node>
+<Node ID="10" label="" >
+			<Observ name="Prendi" P="1">
+                            <MachineAction name="Wait">
+                                <Link_To ID="15">1</Link_To>
+                          </MachineAction>
+                        </Observ>
+			
+    </Node>
+<Node ID="11" label="" >
+			<Observ name="Cerca" P="1">
+                            <MachineAction name="Wait">
+                                <Link_To ID="16">1</Link_To>
+                          </MachineAction>
+                        </Observ>
+			
+    </Node>
+    <Node ID="12" label="" >
+			<Observ name="Dammi" P="1">
+                            <MachineAction name="Prendi_Palla_Gialla">
+<Link_To ID="1">0.2</Link_To>	
+				<Link_To ID="2">0.1</Link_To>						
+				<Link_To ID="3">0.2</Link_To>						
+				<Link_To ID="4">0.1</Link_To>						
+				<Link_To ID="5">0.2</Link_To>											
+				<External_Link_To DF="Segue_Cestino" ID="2">0.1</External_Link_To>
+				<External_Link_To DF="Solo_Rosso" ID="2">0.05</External_Link_To>
+				<External_Link_To DF="Solo_Giallo" ID="2">0.05</External_Link_To>
+                          </MachineAction>
+                        </Observ>
+			
+    </Node>
+<Node ID="13" label="" >
+			<Observ name="Posa" P="1">
+                            <MachineAction name="Prendi_Cestino">
+				<Link_To ID="1">0.2</Link_To>	
+				<Link_To ID="2">0.1</Link_To>						
+				<Link_To ID="3">0.2</Link_To>						
+				<Link_To ID="4">0.1</Link_To>						
+				<Link_To ID="5">0.2</Link_To>											
+				<External_Link_To DF="Segue_Cestino" ID="2">0.1</External_Link_To>
+				<External_Link_To DF="Solo_Rosso" ID="2">0.05</External_Link_To>
+				<External_Link_To DF="Solo_Giallo" ID="2">0.05</External_Link_To>	
+                          </MachineAction>
+                        </Observ>
+			
+    </Node>
+<Node ID="14" label="" >
+			<Observ name="Prendi" P="1">
+                            <MachineAction name="Prendi_Palla_Gialla(x,y)">
+				<Link_To ID="1">0.2</Link_To>	
+				<Link_To ID="2">0.1</Link_To>						
+				<Link_To ID="3">0.2</Link_To>						
+				<Link_To ID="4">0.1</Link_To>						
+				<Link_To ID="5">0.2</Link_To>											
+				<External_Link_To DF="Segue_Cestino" ID="2">0.1</External_Link_To>
+				<External_Link_To DF="Solo_Rosso" ID="2">0.05</External_Link_To>
+				<External_Link_To DF="Solo_Giallo" ID="2">0.05</External_Link_To>
+                          </MachineAction>
+                        </Observ>
+			
+    </Node>
+    
+    
+    <Node ID="15" label="" >
+			<Observ name="Posa" P="1">
+                            <MachineAction name="Wait">
+                                <Link_To ID="17">1</Link_To>
+                          </MachineAction>
+                        </Observ>
+			
+    </Node>
+<Node ID="16" label="" >
+			<Observ name="Posa" P="1">
+                            <MachineAction name="Prendi_Palla_Gialla(x,y)">
+				<Link_To ID="1">0.15</Link_To>	
+				<Link_To ID="2">0.05</Link_To>						
+				<Link_To ID="3">0.25</Link_To>						
+				<Link_To ID="4">0.1</Link_To>						
+				<Link_To ID="5">0.25</Link_To>											
+				<External_Link_To DF="Segue_Cestino" ID="2">0.1</External_Link_To>
+				<External_Link_To DF="Solo_Rosso" ID="2">0.05</External_Link_To>
+				<External_Link_To DF="Solo_Giallo" ID="2">0.05</External_Link_To>
+                          </MachineAction>
+                        </Observ>
+			
+    </Node>
+<Node ID="17" label="" >
+			<Observ name="Cerca" P="1">
+                            <MachineAction name="Prendi_Cestino(x,y)">
+				<Link_To ID="1">0.2</Link_To>	
+				<Link_To ID="2">0.1</Link_To>						
+				<Link_To ID="3">0.2</Link_To>						
+				<Link_To ID="4">0.1</Link_To>						
+				<Link_To ID="5">0.2</Link_To>											
+				<External_Link_To DF="Segue_Cestino" ID="2">0.1</External_Link_To>
+				<External_Link_To DF="Solo_Rosso" ID="2">0.05</External_Link_To>
+				<External_Link_To DF="Solo_Giallo" ID="2">0.05</External_Link_To>
+                          </MachineAction>
+                        </Observ>
+			
+    </Node>
+    
+    
+    
+    
+    
+    
+    
+</Dialog>

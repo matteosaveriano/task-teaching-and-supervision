@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Dialog SYSTEM "/home/lorenzo/Scrivania/file.dtd"> 
+<Dialog label="Cane_Riporto">
+    <!--i nodi devono esser ordinati per id,la numerazione parte da 0-->
+    <Node ID="0" label="Start" startingP="1">
+                        <Observ name="StartUp" P="1">
+                            <MachineAction name="Greet">
+                                <Link_To ID="1">0.2</Link_To>
+                                <Link_To ID="2">0.4</Link_To>
+                                <Link_To ID="3">0.4</Link_To>
+
+			    </MachineAction>
+                        </Observ>
+    </Node>
+    <Node ID="1" label="Avvicina l'utente" >
+			<Observ name="Vieni_qui" P="1">
+                            <MachineAction name="Close_To">
+                                <Link_To ID="2">0.5</Link_To>
+				<Link_To ID="3">0.5</Link_To>
+                          </MachineAction>
+                        </Observ>
+						
+                       		
+    </Node>
+     <Node ID="2" label="Cerca palla" >
+			<Observ name="Cerca" P="1">
+                            <MachineAction name="Look_For:Ball">
+                                <Link_To ID="5">1</Link_To>
+                          </MachineAction>
+                        </Observ>
+    </Node>
+	    
+    <Node ID="3" label="Prendi palla" >
+			<Observ name="Prendi" P="1">
+                            <MachineAction name="Take:Ball">
+                                <Link_To ID="5">1</Link_To>
+
+                          </MachineAction>
+                        </Observ>
+    </Node> 
+    <Node ID="4" label="Utente indica la palla" >
+			<Observ name="Indica" P="1">
+                            <MachineAction name="Take:Ball">
+                                <Link_To ID="5">1</Link_To>
+                          </MachineAction>
+                        </Observ>
+    </Node>
+<Node ID="5" label="Robot si avvicina" >
+			<Observ name="Vieni_qui" P="1">
+                            <MachineAction name="Close_To">
+                                <Link_To ID="6">0.5</Link_To>
+				<Link_To ID="7">0.5</Link_To>
+                          </MachineAction>
+                        </Observ>
+    </Node>
+<Node ID="6" label="Robot mostra la palla" >
+			<Observ name="Mostra" P="1">
+                            <MachineAction name="Show">
+                                <Link_To ID="8">0.7</Link_To>
+				<Link_To ID="7">0.3</Link_To>
+					
+                          </MachineAction>
+                        </Observ>
+    </Node>
+<Node ID="7" label="Robot cerca cestino" >
+			<Observ name="Cerca" P="1">
+                            <MachineAction name="Look_For:Basket">
+                                <Link_To ID="1">0.2</Link_To>
+				<Link_To ID="2">0.4</Link_To>
+				<Link_To ID="3">0.4</Link_To>
+				<!-- <Link_To ID="9">0.05</Link_To>-->
+                          </MachineAction>
+                        </Observ>
+    </Node>
+<Node ID="8" label="Robot da la palla all'utente" >
+			<Observ name="Dammi" P="1">
+                            <MachineAction name="Give:Ball">
+                                <Link_To ID="2">0.5</Link_To>
+				<Link_To ID="3">0.5</Link_To>
+				<!--<Link_To ID="9">0.05</Link_To>-->
+				
+                          </MachineAction>
+                        </Observ>
+    </Node>
+<Node ID="9" label="Robot saluta" >
+			<Observ name="Ferma" P="1">
+                            <MachineAction name="Greet_exit">
+                                
+                          </MachineAction>
+                        </Observ>
+    </Node>
+</Dialog>

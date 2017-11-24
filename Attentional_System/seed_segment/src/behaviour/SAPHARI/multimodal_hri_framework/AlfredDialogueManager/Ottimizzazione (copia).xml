@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Summary_State ID="0">
+    <First>0.33333333333333331</First>
+    <Second>0.33333333333333331</Second>
+    <Comp>0.99999999999999989</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="1">
+    <First>0.49999999999999994</First>
+    <Second>0.49999999999999994</Second>
+    <Comp>0.99999999999999989</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="2">
+    <First>1</First>
+    <Second>0</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="3">
+    <First>0.54239982269378761</First>
+    <Second>0.45760017730621233</Second>
+    <Comp>0.99999999999999989</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="4">
+    <First>0.59652658586227247</First>
+    <Second>0.28769145627454695</Second>
+    <Comp>0.71303695905064546</Comp>
+    <Action>Request</Action>
+</Summary_State>
+
+<Summary_State ID="5">
+    <First>0.71303695905064546</First>
+    <Second>0.20773671216594963</Second>
+    <Comp>0</Comp>
+    <Action>Request</Action>
+</Summary_State>
+
+<Summary_State ID="6">
+    <First>0.66666666666666674</First>
+    <Second>0.20000000000000001</Second>
+    <Comp>0.22222222222222227</Comp>
+    <Action>Request</Action>
+</Summary_State>
+
+<Summary_State ID="7">
+    <First>0.6000000000000002</First>
+    <Second>0.22222222222222227</Second>
+    <Comp>0</Comp>
+    <Action>Request</Action>
+</Summary_State>
+
+<Summary_State ID="8">
+    <First>0.55555555555555558</First>
+    <Second>0.27777777777777779</Second>
+    <Comp>0</Comp>
+    <Action>Request</Action>
+</Summary_State>
+
+<Summary_State ID="9">
+    <First>0.62500000000000011</First>
+    <Second>0.37500000000000006</Second>
+    <Comp>0</Comp>
+    <Action>Request</Action>
+</Summary_State>
+
+<Summary_State ID="10">
+    <First>0.46034143288212348</First>
+    <Second>0.44849168116871757</Second>
+    <Comp>0.83106561907087162</Comp>
+    <Action>Request</Action>
+</Summary_State>
+
+<Summary_State ID="11">
+    <First>0.83106561907087162</First>
+    <Second>0.092340624341207947</Second>
+    <Comp>0</Comp>
+    <Action>Request</Action>
+</Summary_State>
+
+<Summary_State ID="12">
+    <First>0.57871923111233781</First>
+    <Second>0.36526761502094451</Second>
+    <Comp>0.86704080033225062</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="13">
+    <First>0.63771643126492394</First>
+    <Second>0.36228356873507539</Second>
+    <Comp>0.99999999999999811</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="14">
+    <First>0.70063828223502234</First>
+    <Second>0.23110242614188958</Second>
+    <Comp>0.771983899168173</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="15">
+    <First>0.70038910505836571</First>
+    <Second>0.21011673151750973</Second>
+    <Comp>0.12987012987012986</Comp>
+    <Action>Request</Action>
+</Summary_State>
+
+<Summary_State ID="16">
+    <First>0.94736842105263164</First>
+    <Second>0.052631578947368425</Second>
+    <Comp>1.0000000000000011</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="17">
+    <First>0.7011999366464895</First>
+    <Second>0.29880006335351039</Second>
+    <Comp>0.99999999999999967</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="18">
+    <First>0.65088411225228981</First>
+    <Second>0.28177489691996666</Second>
+    <Comp>0.80710992197408171</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="19">
+    <First>0.90000000000000002</First>
+    <Second>0.099999999999999992</Second>
+    <Comp>1.0000000000000002</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="20">
+    <First>0.70129870129870153</First>
+    <Second>0.12987012987012991</Second>
+    <Comp>0</Comp>
+    <Action>Request</Action>
+</Summary_State>
+
+<Summary_State ID="21">
+    <First>0.36815835704513367</First>
+    <Second>0.22152999831548087</Second>
+    <Comp>0.3246950000956923</Comp>
+    <Action>Request</Action>
+</Summary_State>
+
+<Summary_State ID="22">
+    <First>0.35060999980861529</First>
+    <Second>0.3246950000956923</Second>
+    <Comp>0.49999999999999989</Comp>
+    <Action>Request</Action>
+</Summary_State>
+
+<Summary_State ID="23">
+    <First>0.5</First>
+    <Second>0.5</Second>
+    <Comp>0</Comp>
+    <Action>ChoiceAmong2</Action>
+</Summary_State>
+
+<Summary_State ID="24">
+    <First>0.49836606610891404</First>
+    <Second>0.37995107818280965</Second>
+    <Comp>0.75742698512358619</Comp>
+    <Action>Request</Action>
+</Summary_State>
+
+<Summary_State ID="25">
+    <First>0.76594684574170602</First>
+    <Second>0.12198849664809648</Second>
+    <Comp>0</Comp>
+    <Action>Request</Action>
+</Summary_State>
+
+<Summary_State ID="26">
+    <First>0.63547758284600386</First>
+    <Second>0.19064327485380114</Second>
+    <Comp>0.28877005347593582</Comp>
+    <Action>Request</Action>
+</Summary_State>
+
+<Summary_State ID="27">
+    <First>0.85789473684210515</First>
+    <Second>0.14210526315789473</Second>
+    <Comp>0.99999999999999922</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="28">
+    <First>0.42693301720400428</First>
+    <Second>0.39544792643190574</Second>
+    <Comp>0.69005533088385929</Comp>
+    <Action>Request</Action>
+</Summary_State>
+
+<Summary_State ID="29">
+    <First>0.47224243472477484</First>
+    <Second>0.41403589192538592</Second>
+    <Comp>0.78451910340587272</Comp>
+    <Action>Request</Action>
+</Summary_State>

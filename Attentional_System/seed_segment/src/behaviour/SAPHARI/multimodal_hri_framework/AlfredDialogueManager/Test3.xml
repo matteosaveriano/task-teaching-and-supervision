@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Dialog SYSTEM "/home/lorenzo/Scrivania/file.dtd"> 
+ <!--In questa situatione il robot raccoglie solo palline gialle-->
+<Dialog label="Cane_Riporto">
+    <!--i nodi devono esser ordinati per id,la numerazione parte da 0-->
+    <Node ID="0" label="Start">
+                        <Observ name="Vieni_qui" P="0.3">
+                            <MachineAction name="Avvicinati">
+				<Link_To ID="1">1</Link_To>
+                            </MachineAction>
+                        </Observ>
+ 			<Observ name="Mostra" P="0.4">
+                            <MachineAction name="Mostra">
+				<Link_To ID="1">1</Link_To>
+                            </MachineAction>
+                        </Observ>
+                        <Observ name="Avvicinati" P="0.3">
+                            <MachineAction name="Avvicinati">
+				<Link_To ID="1">1</Link_To>
+                            </MachineAction>
+                        </Observ>
+    </Node>
+    <Node ID="1" label="Robot da la palla all'utente" >
+			<Observ name="Dammi" P="1">
+                            <MachineAction name="Lascia">
+				<External_Link_To DF="Segue_Cestino" ID="2">0.1</External_Link_To>
+				<External_Link_To DF="Solo_Rosso" ID="2">0.2</External_Link_To>
+				<External_Link_To DF="Solo_Giallo" ID="2">0.2</External_Link_To>
+				<External_Link_To DF="Seq" ID="1">0.1</External_Link_To>	
+				<External_Link_To DF="Seq" ID="2">0.1</External_Link_To>
+				<External_Link_To DF="Seq" ID="3">0.1</External_Link_To>	
+				<External_Link_To DF="Seq" ID="4">0.1</External_Link_To>	
+				<External_Link_To DF="Seq" ID="5">0.1</External_Link_To>
+                          </MachineAction>
+                        </Observ>
+			
+    </Node>
+    
+</Dialog>

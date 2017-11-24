@@ -1,0 +1,1400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Summary_State ID="0">
+    <First>0.25</First>
+    <Second>0.25</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="1">
+    <First>0.16692770776450164</First>
+    <Second>0.16692770776450164</Second>
+    <Comp>2</Comp>
+    <Action>Request</Action>
+</Summary_State>
+
+<Summary_State ID="2">
+    <First>0.22780299772250806</First>
+    <Second>0.22780299772250806</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="3">
+    <First>0.42453041881534848</First>
+    <Second>0.42453041881534848</Second>
+    <Comp>0</Comp>
+    <Action>ChoiceAmong2</Action>
+</Summary_State>
+
+<Summary_State ID="4">
+    <First>0.73771131037268312</First>
+    <Second>0.14754226207453661</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="5">
+    <First>0.80305742585428086</First>
+    <Second>0.11737932001794119</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="6">
+    <First>1</First>
+    <Second>0</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="7">
+    <First>0.9823727936191915</First>
+    <Second>0.017627206380808544</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="8">
+    <First>0.98814333894945783</First>
+    <Second>0.011856661050542148</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="9">
+    <First>0.66415274290734516</First>
+    <Second>0.18596276801405665</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="10">
+    <First>0.55371233227833838</First>
+    <Second>0.27685616613916919</Second>
+    <Comp>0.0074342226750932694</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="11">
+    <First>0.625</First>
+    <Second>0.37499999999999994</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="12">
+    <First>0.84023240012927292</First>
+    <Second>0.15976759987072714</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="13">
+    <First>0.80504447682344504</First>
+    <Second>0.19495552317655493</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="14">
+    <First>0.59410643320353174</First>
+    <Second>0.40589356679646832</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="15">
+    <First>0.99791691931877513</First>
+    <Second>0.0020830806812248159</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="16">
+    <First>0.71910810076693643</First>
+    <Second>0.28089189923306351</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="17">
+    <First>0.9370150358077185</First>
+    <Second>0.062984964192281542</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="18">
+    <First>0.91011831261341769</First>
+    <Second>0.089881687386582296</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="19">
+    <First>0.71973379712850682</First>
+    <Second>0.12852389234437622</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="20">
+    <First>0.66535679182363849</First>
+    <Second>0.33464320817636162</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="21">
+    <First>0.58637261069492175</First>
+    <Second>0.41362738930507825</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="22">
+    <First>0.85805657121220069</First>
+    <Second>0.14194342878779928</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="23">
+    <First>0.84919224482510502</First>
+    <Second>0.15080775517489492</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="24">
+    <First>0.98002192538077093</First>
+    <Second>0.019978074619229094</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="25">
+    <First>0.76747384769063243</First>
+    <Second>0.23252615230936752</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="26">
+    <First>0.95337239159362108</First>
+    <Second>0.046627608406378931</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="27">
+    <First>0.62370373630339437</First>
+    <Second>0.37629626369660563</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="28">
+    <First>0.66708124898712506</First>
+    <Second>0.11912165160484378</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="29">
+    <First>0.35780997988976909</First>
+    <Second>0.35780997988976909</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="30">
+    <First>0.48517930564258366</First>
+    <Second>0.48517930564258366</Second>
+    <Comp>0</Comp>
+    <Action>ChoiceAmong2</Action>
+</Summary_State>
+
+<Summary_State ID="31">
+    <First>0.97065533245706648</First>
+    <Second>0.013935220313052074</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="32">
+    <First>0.87297112400874222</First>
+    <Second>0.048857259996637613</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="33">
+    <First>0.64059792995621112</First>
+    <Second>0.35936757759114779</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="34">
+    <First>0.92537573799757666</First>
+    <Second>0.073974307954557159</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="35">
+    <First>0.56774318628289366</First>
+    <Second>0.25188928591954302</Second>
+    <Comp>0.0010332035711909141</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="36">
+    <First>0.5</First>
+    <Second>0.5</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="37">
+    <First>0.37970993500342748</First>
+    <Second>0.37970993500342748</Second>
+    <Comp>0</Comp>
+    <Action>ChoiceAmong2</Action>
+</Summary_State>
+
+<Summary_State ID="38">
+    <First>0.6121489871122241</First>
+    <Second>0.19392550644388798</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="39">
+    <First>0.66482505314801676</First>
+    <Second>0.1861510148814447</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="40">
+    <First>0.55538463309923614</First>
+    <Second>0.27769231654961807</Second>
+    <Comp>0.00069196983343042446</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="41">
+    <First>0.78307281106191429</First>
+    <Second>0.21692718893808574</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="42">
+    <First>0.52877729774226356</First>
+    <Second>0.47122270225773655</Second>
+    <Comp>0</Comp>
+    <Action>ChoiceAmong2</Action>
+</Summary_State>
+
+<Summary_State ID="43">
+    <First>0.99941471468502519</First>
+    <Second>0.00058528531497490125</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="44">
+    <First>0.72757052865641403</First>
+    <Second>0.27242947134358592</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="45">
+    <First>0.72942458261420018</First>
+    <Second>0.27057541738579971</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="46">
+    <First>0.81395371839708586</First>
+    <Second>0.18604628160291412</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="47">
+    <First>0.30783473863301486</First>
+    <Second>0.25652894886084576</Second>
+    <Comp>0</Comp>
+    <Action>ChoiceAmong2</Action>
+</Summary_State>
+
+<Summary_State ID="48">
+    <First>0.37061806360263788</First>
+    <Second>0.25876387279472418</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="49">
+    <First>0.4673870690523777</First>
+    <Second>0.29589607274867907</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="50">
+    <First>0.86467625915783397</First>
+    <Second>0.075179856023425584</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="51">
+    <First>0.90276146611882435</First>
+    <Second>0.09548313946400884</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="52">
+    <First>0.32076248057942619</First>
+    <Second>0.19245748834765572</Second>
+    <Comp>0.24441752074460463</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="53">
+    <First>0.375</First>
+    <Second>0.3125</Second>
+    <Comp>0</Comp>
+    <Action>ChoiceAmong2</Action>
+</Summary_State>
+
+<Summary_State ID="54">
+    <First>0.5</First>
+    <Second>0.5</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="55">
+    <First>0.62350274730778465</First>
+    <Second>0.17458076924617971</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="56">
+    <First>0.46369732580465511</First>
+    <Second>0.23184866290232756</Second>
+    <Comp>0.30830503278712929</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="57">
+    <First>0.90188762903667719</First>
+    <Second>0.079050138324233424</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="58">
+    <First>0.93808858955095631</First>
+    <Second>0.048921577025703399</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="59">
+    <First>0.74892620939668952</First>
+    <Second>0.24903077517162533</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="60">
+    <First>0.5357167702199187</First>
+    <Second>0.16071503106597559</Second>
+    <Comp>0.076913856270581116</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="61">
+    <First>0.73103347414859488</First>
+    <Second>0.21900179814978699</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="62">
+    <First>0.98472702967807002</First>
+    <Second>0.015272970321929875</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="63">
+    <First>0.66395358261057946</First>
+    <Second>0.18590700313096223</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="64">
+    <First>0.64361051636082245</First>
+    <Second>0.23696109284519781</Second>
+    <Comp>0.18617021276595744</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="65">
+    <First>0.81699346405228768</First>
+    <Second>0.11437908496732027</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="66">
+    <First>0.94884127676219243</First>
+    <Second>0.049978422082990519</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="67">
+    <First>0.97692864324759265</First>
+    <Second>0.023071356752407401</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="68">
+    <First>0.94310750918463049</First>
+    <Second>0.056892490815369484</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="69">
+    <First>0.74243534771726627</First>
+    <Second>0.14551732815258417</Second>
+    <Comp>0.40355284686471365</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="70">
+    <First>0.56511504186514205</First>
+    <Second>0.31207794059099825</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="71">
+    <First>0.7176103352239257</First>
+    <Second>0.18192421784472471</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="72">
+    <First>0.45150175143649318</First>
+    <Second>0.45150175143649313</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="73">
+    <First>0.6588454741364923</First>
+    <Second>0.32942273706824615</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="74">
+    <First>0.95943253529170014</First>
+    <Second>0.040018622806152461</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="75">
+    <First>0.95402450994265608</First>
+    <Second>0.017682880791286121</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="76">
+    <First>0.49991429638985857</First>
+    <Second>0.27588874909268657</Second>
+    <Comp>0.054257824433921055</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="77">
+    <First>0.58333333333333326</First>
+    <Second>0.20833333333333334</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="78">
+    <First>0.49758311049939458</First>
+    <Second>0.49758311049939458</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="79">
+    <First>0.99037894803652882</First>
+    <Second>0.0048105259817355925</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="80">
+    <First>0.42548658439473114</First>
+    <Second>0.37821029723976113</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="81">
+    <First>0.49293431198449628</First>
+    <Second>0.49293431198449628</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="82">
+    <First>0.55074145039553934</First>
+    <Second>0.27537072519776967</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="83">
+    <First>0.68820078002068752</First>
+    <Second>0.31179921997931254</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="84">
+    <First>0.58351174628921221</First>
+    <Second>0.16338328896097945</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="85">
+    <First>0.39228786767761731</First>
+    <Second>0.2938818381802889</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="86">
+    <First>0.82099273222810798</First>
+    <Second>0.17900726777189202</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="87">
+    <First>0.82974740670442693</First>
+    <Second>0.17025259329557305</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="88">
+    <First>0.6040650444822776</First>
+    <Second>0.39593495551772234</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="89">
+    <First>0.47379607551081526</First>
+    <Second>0.35414738972188819</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="90">
+    <First>0.67302308713428671</First>
+    <Second>0.16078641400790555</Second>
+    <Comp>0.016527420246705758</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="91">
+    <First>0.27735119496819782</First>
+    <Second>0.27735119496819782</Second>
+    <Comp>0</Comp>
+    <Action>ChoiceAmong2</Action>
+</Summary_State>
+
+<Summary_State ID="92">
+    <First>0.3837980399842939</First>
+    <Second>0.30810098000785308</Second>
+    <Comp>0</Comp>
+    <Action>ChoiceAmong2</Action>
+</Summary_State>
+
+<Summary_State ID="93">
+    <First>0.29621979365290518</First>
+    <Second>0.29621979365290518</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="94">
+    <First>0.66320794992330767</First>
+    <Second>0.33160397496165384</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="95">
+    <First>0.47936611032847731</First>
+    <Second>0.25033563539376047</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="96">
+    <First>0.52099523025865813</First>
+    <Second>0.27207528691285493</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="97">
+    <First>0.65693430656934293</First>
+    <Second>0.34306569343065701</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="98">
+    <First>0.44309049990595673</First>
+    <Second>0.44309049990595667</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="99">
+    <First>0.88918571051360973</First>
+    <Second>0.073876192990926889</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="100">
+    <First>0.66666666666666674</First>
+    <Second>0.33333333333333331</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="101">
+    <First>0.46171834883003188</First>
+    <Second>0.16890697210594269</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="102">
+    <First>0.68414638224050517</First>
+    <Second>0.31585361775949483</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="103">
+    <First>0.99963756890888023</First>
+    <Second>0.00036243109111982683</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="104">
+    <First>0.54282790971214256</First>
+    <Second>0.21917400636706835</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="105">
+    <First>0.47927933625801539</First>
+    <Second>0.47927933625801539</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="106">
+    <First>0.92041543505079104</First>
+    <Second>0.039792282474604507</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="107">
+    <First>0.35213577766842791</First>
+    <Second>0.35213577766842785</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="108">
+    <First>0.66623288664795888</First>
+    <Second>0.33311644332397938</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="109">
+    <First>0.52906171667344959</First>
+    <Second>0.23463271288884285</Second>
+    <Comp>0.032338450350602031</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="110">
+    <First>0.51487414187643021</First>
+    <Second>0.26887871853546913</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="111">
+    <First>0.81286271173669167</First>
+    <Second>0.18713728826330833</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="112">
+    <First>0.90217375637790176</First>
+    <Second>0.097826243622098297</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="113">
+    <First>0.74565336041772068</First>
+    <Second>0.25434663958227938</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="114">
+    <First>0.63150407702843503</First>
+    <Second>0.11276858518364911</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="115">
+    <First>0.30602396974783058</First>
+    <Second>0.30602396974783058</Second>
+    <Comp>2</Comp>
+    <Action>Request</Action>
+</Summary_State>
+
+<Summary_State ID="116">
+    <First>0.6332222310667146</First>
+    <Second>0.36677776893328534</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="117">
+    <First>0.39043969806282686</First>
+    <Second>0.30273942544575549</Second>
+    <Comp>0.14859633978228681</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="118">
+    <First>0.72491913164781718</First>
+    <Second>0.10580033398160882</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="119">
+    <First>0.90892022207135204</First>
+    <Second>0.08285163007027585</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="120">
+    <First>0.48668418653725298</First>
+    <Second>0.19742915902413349</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="121">
+    <First>0.98605370524586389</First>
+    <Second>0.011695790427253518</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="122">
+    <First>0.74509094316335245</First>
+    <Second>0.14161614268702644</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="123">
+    <First>0.55968582342886752</First>
+    <Second>0.43909860198622902</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="124">
+    <First>0.97326148169440541</First>
+    <Second>0.026738518305594615</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="125">
+    <First>0.53516987792228954</First>
+    <Second>0.34200178179425433</Second>
+    <Comp>0.017029321519019838</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="126">
+    <First>0.74850299401197606</First>
+    <Second>0.1467065868263473</Second>
+    <Comp>0.41666666666666674</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="127">
+    <First>0.77965003840609937</First>
+    <Second>0.22034996159390055</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="128">
+    <First>0.68542971300575894</First>
+    <Second>0.314570286994241</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="129">
+    <First>0.86391597499537842</First>
+    <Second>0.13608402500462166</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="130">
+    <First>0.66919360138414852</First>
+    <Second>0.33080639861585137</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="131">
+    <First>0.84029463402746263</First>
+    <Second>0.071726973520558554</Second>
+    <Comp>0.39047915400262817</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="132">
+    <First>0.89861933748254375</First>
+    <Second>0.069708507765850386</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="133">
+    <First>0.55432521748428065</First>
+    <Second>0.16629756524528419</Second>
+    <Comp>0.0049691133875560739</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="134">
+    <First>0.71436489560554006</First>
+    <Second>0.26970195198648028</Second>
+    <Comp>0.055781492410597155</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="135">
+    <First>0.9910810792008532</First>
+    <Second>0.0089189207991468792</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="136">
+    <First>0.74579260264177816</First>
+    <Second>0.14617535011778851</Second>
+    <Comp>0.41073141637462252</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="137">
+    <First>0.97582664154048648</First>
+    <Second>0.018970150905110058</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="138">
+    <First>0.86592525860661584</First>
+    <Second>0.13407474139338407</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="139">
+    <First>0.70626320245523866</First>
+    <Second>0.29373679754476134</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="140">
+    <First>0.80732384384648892</First>
+    <Second>0.19267615615351108</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="141">
+    <First>0.56099406879321834</First>
+    <Second>0.23658685572237131</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="142">
+    <First>0.53891494147247299</First>
+    <Second>0.22819170576836101</Second>
+    <Comp>0.01019691899325407</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="143">
+    <First>0.47351290154293652</First>
+    <Second>0.47351290154293652</Second>
+    <Comp>0</Comp>
+    <Action>ChoiceAmong2</Action>
+</Summary_State>
+
+<Summary_State ID="144">
+    <First>0.89938177579398515</First>
+    <Second>0.050309112103007411</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="145">
+    <First>0.59887799041445</First>
+    <Second>0.167685837316046</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="146">
+    <First>0.41804197553084527</First>
+    <Second>0.24752444404447851</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="147">
+    <First>0.64236253312052372</First>
+    <Second>0.17986150927374664</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="148">
+    <First>0.50291573431359715</First>
+    <Second>0.25145786715679858</Second>
+    <Comp>0.19061492140509906</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="149">
+    <First>0.99516387596585099</First>
+    <Second>0.0048361240341489994</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="150">
+    <First>0.91458530730269694</First>
+    <Second>0.085414692697303077</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="151">
+    <First>0.57228140650883985</First>
+    <Second>0.42771859349116015</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="152">
+    <First>0.5716852532494282</First>
+    <Second>0.42831474675057185</Second>
+    <Comp>0</Comp>
+    <Action>ChoiceAmong2</Action>
+</Summary_State>
+
+<Summary_State ID="153">
+    <First>0.93634249743220288</First>
+    <Second>0.06365750256779705</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="154">
+    <First>0.95020437442809036</First>
+    <Second>0.049795625571909731</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="155">
+    <First>0.62585382004949874</First>
+    <Second>0.3741461799505012</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="156">
+    <First>0.99648540923719942</First>
+    <Second>0.0035145907628007017</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="157">
+    <First>0.56018009532989488</First>
+    <Second>0.43264609142455235</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="158">
+    <First>0.9791627819503993</First>
+    <Second>0.0090600258789938614</Second>
+    <Comp>0.2546282858658408</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="159">
+    <First>0.52245707943145514</First>
+    <Second>0.18659181408266257</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="160">
+    <First>0.39073307559562043</First>
+    <Second>0.39073307559562043</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="161">
+    <First>0.48950230980038234</First>
+    <Second>0.48950230980038234</Second>
+    <Comp>0</Comp>
+    <Action>ChoiceAmong2</Action>
+</Summary_State>
+
+<Summary_State ID="162">
+    <First>0.95887272204693874</First>
+    <Second>0.020563638976530622</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="163">
+    <First>0.52557293868040156</First>
+    <Second>0.4671759454936904</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="164">
+    <First>0.62742400042916913</First>
+    <Second>0.35292600024140752</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="165">
+    <First>0.35248951612326018</First>
+    <Second>0.28773261344938222</Second>
+    <Comp>0.25738688827331485</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="166">
+    <First>0.59838358719303686</First>
+    <Second>0.29763755051290025</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="167">
+    <First>0.74109907120743035</First>
+    <Second>0.25890092879256971</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="168">
+    <First>0.91211496326399344</First>
+    <Second>0.087885036736006547</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="169">
+    <First>0.9807465870035903</First>
+    <Second>0.019253412996409713</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="170">
+    <First>0.71017539107293393</First>
+    <Second>0.12681703412016676</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="171">
+    <First>0.75402414643938476</First>
+    <Second>0.24597585356061533</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="172">
+    <First>0.67953030008177628</First>
+    <Second>0.32046969991822377</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="173">
+    <First>0.88324082864390419</First>
+    <Second>0.11675917135609587</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="174">
+    <First>0.88267258773861867</First>
+    <Second>0.079876639724644261</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="175">
+    <First>0.95941802190781866</First>
+    <Second>0.037965962196109579</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="176">
+    <First>0.44287279618604475</First>
+    <Second>0.21205926719822213</Second>
+    <Comp>0</Comp>
+    <Action>ChoiceAmong2</Action>
+</Summary_State>
+
+<Summary_State ID="177">
+    <First>0.38062989160557364</First>
+    <Second>0.28390079446479249</Second>
+    <Comp>0.083259619355091061</Comp>
+    <Action>ChoiceAmong2</Action>
+</Summary_State>
+
+<Summary_State ID="178">
+    <First>0.49733575770094957</First>
+    <Second>0.49733575770094957</Second>
+    <Comp>0</Comp>
+    <Action>ChoiceAmong2</Action>
+</Summary_State>
+
+<Summary_State ID="179">
+    <First>0.98939951532313131</First>
+    <Second>0.0053002423384344221</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="180">
+    <First>0.54101538266592197</First>
+    <Second>0.1613100942303794</Second>
+    <Comp>0.16502111555102325</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="181">
+    <First>0.4209087183278315</First>
+    <Second>0.30240217482859283</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="182">
+    <First>0.83639464205370972</First>
+    <Second>0.11128654621977216</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="183">
+    <First>0.98975146297842787</First>
+    <Second>0.010248537021572086</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="184">
+    <First>0.94005607234709199</First>
+    <Second>0.059943927652908034</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="185">
+    <First>0.61583356523439636</First>
+    <Second>0.38416643476560364</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="186">
+    <First>0.88167761474477047</First>
+    <Second>0.1183223852552296</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="187">
+    <First>0.98845024266307568</First>
+    <Second>0.0115497573369243</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="188">
+    <First>0.57749050782469047</First>
+    <Second>0.42250949217530953</Second>
+    <Comp>0</Comp>
+    <Action>ChoiceAmong2</Action>
+</Summary_State>
+
+<Summary_State ID="189">
+    <First>0.71942639220405158</First>
+    <Second>0.28057360779594848</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="190">
+    <First>0.38581030210699857</First>
+    <Second>0.33798936174312161</Second>
+    <Comp>0</Comp>
+    <Action>ChoiceAmong2</Action>
+</Summary_State>
+
+<Summary_State ID="191">
+    <First>0.55030125530044816</First>
+    <Second>0.2243433813402172</Second>
+    <Comp>0.0022503554458301032</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="192">
+    <First>0.47387568222715531</First>
+    <Second>0.47387568222715531</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="193">
+    <First>0.90069146439217096</First>
+    <Second>0.04965426780391452</Second>
+    <Comp>0</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="194">
+    <First>0.4328830238063725</First>
+    <Second>0.4328830238063725</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="195">
+    <First>0.52941176470588225</First>
+    <Second>0.4705882352941177</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="196">
+    <First>0.55358667706464382</First>
+    <Second>0.31139250584886202</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="197">
+    <First>0.73081554274630278</First>
+    <Second>0.26044501677012177</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="198">
+    <First>0.984619838843523</First>
+    <Second>0.014962207836140651</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
+
+<Summary_State ID="199">
+    <First>0.69818658687363355</First>
+    <Second>0.28251055350348203</Second>
+    <Comp>2</Comp>
+    <Action>Do_act</Action>
+</Summary_State>
