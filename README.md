@@ -22,7 +22,7 @@ Make also sure to have Graphviz (```sudo apt-get install graphviz-dev```), Gmp (
 ros-<version>-ar-track-alvar```) installed.
 - _AttentionalSystem_:
   - Open a terminal shell
-  - ```roscd Attentional_System``` Navigate to the folder _Attentional_System_
+  - ```roscd Attentional_System``` (Navigate to the folder _Attentional_System_)
   - ```cd Attentional_System/seed_segment```
   - ```mkdir build```
   - ```cd build```
@@ -37,14 +37,14 @@ For example, assuming that ```libgmp.so.10``` is installed in ```/usr/lib64```, 
 
 - _RobotManager_:
   - Open a terminal shell
-  - ```roscd Robot_Manager``` Navigate to the folder _Robot_Manager_
+  - ```roscd Robot_Manager``` (Navigate to the folder _Robot_Manager_)
   - ```cd Robot_Manager/kuka_seed_commands```
   - ```mkdir build```
   - ```cd build```
   - ```cmake ..```
   - ```cd ..```
   - ```rosmake```
-  - ```roscd Robot_Manager``` Navigate to the folder _Robot_Manager_
+  - ```roscd Robot_Manager``` (Navigate to the folder _Robot_Manager_)
   - ```cd Robot_Manager/LWR_seed_control```
   - ```mkdir build```
   - ```cd build```
@@ -53,7 +53,7 @@ For example, assuming that ```libgmp.so.10``` is installed in ```/usr/lib64```, 
   - ```rosmake```
 - _Scene_Simulator_:
   - Open a terminal shell
-  - ```roscd Scene_Simulator``` Navigate to the folder _Scene_Simulator_
+  - ```roscd Scene_Simulator``` (Navigate to the folder _Scene_Simulator_)
   - ```mkdir build```
   - ```cd build```
   - ```cmake ..```
@@ -66,10 +66,10 @@ into the prepare_coffee.bag file.
 To reproduce the demo execute the following commands in separate shells:
 - ```roscore```
 - ```rosparam set use_sim_time true``` (no troubles with old /tf data)
-- ```roslaunch Scene_Simulator scene_simulator.launch```
-- ```rosrun LWR_seed_control learnTask (start the Robot Manager)```
-- ```rosrun seed_segment seed_segment (start the Attentional System)```
-- navigate to the folder _SceneSimulator_ and then type ```rosbag play prepare_coffee.bag --clock``` (playback the recorded data)
+- ```roslaunch Scene_Simulator scene_simulator.launch``` (start the KUKA LWR 4 simulator)
+- ```rosrun LWR_seed_control learnTask``` (start the Robot Manager)
+- ```rosrun seed_segment seed_segment``` (start the Attentional System)
+- navigate to the folder _Scene_Simulator_ and then type ```rosbag play prepare_coffee.bag --clock``` (playback the recorded data)
 
 After typing these commands, you will have a window showing the task structure updates and a
 simulated scene (```/tf``` frames) in Rviz. Note that the frame ```/wsg50_end_link``` represents the end
