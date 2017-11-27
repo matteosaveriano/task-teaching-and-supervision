@@ -20,7 +20,7 @@ Before starting, make sure to have the forlders _Attentional_System_, _Robot_Man
 _Scene_Simulator_ in your ROS_PACKAGE_PATH (type in a shell ```echo $ROS_PACKAGE_PATH```).
 Make also sure to have Graphviz (```sudo apt-get install graphviz-dev```), Gmp (```sudo apt-get install libgmp-dev```), Eigen (```sudo apt-get install libeigen3-dev```), ARUCO ROS package (```sudo apt-get install
 ros-<version>-ar-track-alvar```) installed.
-- _AttentionalSystem_:
+- _Attentional System_:
   - Open a terminal shell
   - ```roscd Attentional_System``` (Navigate to the folder _Attentional_System_)
   - ```cd Attentional_System/seed_segment```
@@ -35,7 +35,7 @@ _NOTE:_  The compiler assumes that ```libgmp.so.3``` is in ```/usr/lib```. Other
 In a terminal shell type: ```sudo ln -s <path-to-libgmp>/<libgmp-system-version> /usr/lib/libgmp.so.3``` 
 For example, assuming that ```libgmp.so.10``` is installed in ```/usr/lib64```, you will type: ```sudo ln -s /usr/lib64/libgmp.so.10 /usr/lib/libgmp.so.3```.
 
-- _RobotManager_:
+- _Robot Manager_:
   - Open a terminal shell
   - ```roscd Robot_Manager``` (Navigate to the folder _Robot_Manager_)
   - ```cd Robot_Manager/kuka_seed_commands```
@@ -51,7 +51,7 @@ For example, assuming that ```libgmp.so.10``` is installed in ```/usr/lib64```, 
   - ```cmake ..```
   - ```cd ..```
   - ```rosmake```
-- _Scene_Simulator_:
+- _Scene Simulator_:
   - Open a terminal shell
   - ```roscd Scene_Simulator``` (Navigate to the folder _Scene_Simulator_)
   - ```mkdir build```
