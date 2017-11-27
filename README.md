@@ -6,23 +6,23 @@ The framework for multimodal teaching and attentional supervision consists of 3 
 - _Robot Manager (RM)_: Segmentation, motion primitives learning, motor commands generation.
 - _Scene Simulator_: Simulate the robot and the objects in the scene.
 
-The code is written in C++ and organized into ROS nodes.
+The code is written in C++ and organized into ROS (Robotic Operating System) nodes.
 
 ## Software Requirements
 The code is developed and tested under _Ubuntu 14.04_ and _ROS Indigo_. All nodes are compiled
 using _rosbuild_.
 
 ## Installation
-This installation guid is for expert ROS (Robotic Operating System) users. Please visit http://www.ros.org/
+This installation guide is for expert ROS (Robotic Operating System) users. Please visit http://www.ros.org/
 to get started with ROS.
 
-Before starting, make sure to have the forlders _AttentionalSystem_, _RobotManager_, and
-_SceneSimulator_ in your ROS_PACKAGE_PATH (type in a shell ```echo $ROS_PACKAGE_PATH```).
+Before starting, make sure to have the forlders _Attentional_System_, _Robot_Manager_, and
+_Scene_Simulator_ in your ROS_PACKAGE_PATH (type in a shell ```echo $ROS_PACKAGE_PATH```).
 Make also sure to have Graphviz (```sudo apt-get install graphviz-dev```), Gmp (```sudo apt-get install libgmp-dev```), Eigen (```sudo apt-get install libeigen3-dev```), ARUCO ROS package (```sudo apt-get install
 ros-<version>-ar-track-alvar```) installed.
 - _AttentionalSystem_:
   - Open a terminal shell
-  - ```roscd Attentional_System``` Navigate to the folder Attentional_System
+  - ```roscd Attentional_System``` Navigate to the folder _Attentional_System_
   - ```cd Attentional_System/seed_segment```
   - ```mkdir build```
   - ```cd build```
@@ -37,13 +37,14 @@ For example, assuming that ```libgmp.so.10``` is installed in ```/usr/lib64```, 
 
 - _RobotManager_:
   - Open a terminal shell
-  - Navigate to the folder _RobotManager_
+  - ```roscd Robot_Manager``` Navigate to the folder _Robot_Manager_
   - ```cd Robot_Manager/kuka_seed_commands```
   - ```mkdir build```
   - ```cd build```
   - ```cmake ..```
   - ```cd ..```
   - ```rosmake```
+  - ```roscd Robot_Manager``` Navigate to the folder _Robot_Manager_
   - ```cd Robot_Manager/LWR_seed_control```
   - ```mkdir build```
   - ```cd build```
@@ -52,8 +53,7 @@ For example, assuming that ```libgmp.so.10``` is installed in ```/usr/lib64```, 
   - ```rosmake```
 - _Scene_Simulator_:
   - Open a terminal shell
-  - Navigate to the folder _SceneSimulator_
-  - ```cd Scene_Simulator```
+  - ```roscd Scene_Simulator``` Navigate to the folder _Scene_Simulator_
   - ```mkdir build```
   - ```cd build```
   - ```cmake ..```
