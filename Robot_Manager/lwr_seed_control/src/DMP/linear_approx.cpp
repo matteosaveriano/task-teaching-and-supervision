@@ -39,7 +39,7 @@
   */
 
 
-#include "LWR_seed_control/DMP/linear_approx.h"
+#include "lwr_seed_control/DMP/linear_approx.h"
 #include<stdio.h>
 using namespace std;
 

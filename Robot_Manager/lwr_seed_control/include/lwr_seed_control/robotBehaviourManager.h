@@ -3,7 +3,7 @@
 
 #include <ros/package.h>
 
-#include "LWR_seed_control/robotControl.h"
+#include "lwr_seed_control/robotControl.h"
 #include "kuka_seed_commands/commandInterpreter.h"
 
 #include <boost/serialization/map.hpp>

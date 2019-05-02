@@ -15,7 +15,7 @@
  *     copyright notice, this list of conditions and the following
  *     disclaimer in the documentation and/or other materials provided
  *     with the distribution.
- *   * Neither the name of Willow Garage nor the names of its
+ *   * Neither the name of the Robert Bosch nor the names of its
  *     contributors may be used to endorse or promote products derived
  *     from this software without specific prior written permission.
  *
@@ -38,52 +38,42 @@
   * \author Scott Niekum
   */
 
-#ifndef FOURIER_APPROX_H_
-#define FOURIER_APPROX_H_
+#ifndef DMP_H_
+#define DMP_H_
 
-#include "LWR_seed_control/DMP/function_approx.h"
-#include <iostream>
-#include <Eigen/Core>
-#include <Eigen/SVD>
-#include <Eigen/LU>
+#include "ros/ros.h"
+//#include "LWR_seed_control/DMP/LearnDMPFromDemo.h"
+//#include "LWR_seed_control/DMP/GetDMPPlan.h"
+//#include "LWR_seed_control/DMP/SetActiveDMP.h"
+#include "lwr_seed_control/DMPTraj.h"
+#include "lwr_seed_control/DMPData.h"
+#include "lwr_seed_control/DMP/radial_approx.h"
+#include "lwr_seed_control/DMP/fourier_approx.h"
+#include "lwr_seed_control/DMP/linear_approx.h"
+#include <math.h>
 
 namespace  DMP_RosWrapper{
 
-/// Class for linear function approximation with the univariate Fourier basis
-class FourierApprox : public FunctionApprox{
-public:
-	FourierApprox(int order);
-	FourierApprox(const std::vector<double> &w);
-	virtual ~FourierApprox();
+double calcPhase(const double curr_time, const double tau);
 
-	/**\brief Evaluate the function approximator at point x
-	 * \param x The point at which to evaluate
-	 * \return The scalar value of the function at x
-	 */
-	virtual double evalAt(double x);
+void learnFromDemo(const lwr_seed_control::DMPTraj &demo,
+				   const std::vector<double> &k_gains,
+				   const std::vector<double> &d_gains,
+				   const int &num_bases,
+                   std::vector<lwr_seed_control::DMPData> &dmp_list);
 
-	/**\brief Computes the least squares weights given a set of data points
-	 * \param X A vector of the domain values of the points
-	 * \param Y A vector of the target values of the points
-	 */
-	virtual void leastSquaresWeights(double *X, double *Y, int n_pts);
-
-private:
-	/**\brief Calculate the Fourier basis features at point x
-	 * \param x The point at which to get features
-	 */
-	void calcFeatures(double x);
-
-	/**\brief Calculate the Moore-Penrose pseudoinverse of a matrix using SVD
-	 * \param mat The matrix to pseudoinvert
-	 * \return The pseudoinverted matrix
-	 */
-	Eigen::MatrixXd pseudoinverse(Eigen::MatrixXd mat);
-
-	double *features;  //Storage for a set of features
-
-};
+void generatePlan(const std::vector<lwr_seed_control::DMPData> &dmp_list,
+				  const std::vector<double> &x_0,
+				  const std::vector<double> &x_dot_0,
+				  const double &t_0,
+				  const std::vector<double> &goal,
+				  const std::vector<double> &goal_thresh,
+				  const double &seg_length,
+				  const double &tau,
+				  const double &total_dt,
+				  const int &integrate_iter,
+                  lwr_seed_control::DMPTraj &plan,
+				  uint8_t &at_goal);
 
 }
-
-#endif /* FOURIER_APPROX_H_ */
+#endif /* DMP_H_ */

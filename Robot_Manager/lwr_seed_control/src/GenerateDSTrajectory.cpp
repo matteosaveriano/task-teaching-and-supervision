@@ -1,4 +1,4 @@
-#include "LWR_seed_control/GenerateDSTrajectory.h"
+#include "lwr_seed_control/GenerateDSTrajectory.h"
 
 GenerateDSTrajectoy::GenerateDSTrajectoy( vector<double> goalFrame,
                                           vector<double> stiffness,
@@ -123,7 +123,7 @@ bool GenerateDSTrajectoy::loadDMPparamsFromFile(std::string fileName, int spaceD
     topics.push_back(std::string("dmp_tau"));
     topics.push_back(std::string("dmp_goal"));
 
-    LWR_seed_control::DMPData *curr_dmp = new LWR_seed_control::DMPData();
+    lwr_seed_control::DMPData *curr_dmp = new lwr_seed_control::DMPData();
 
     // Read DMP parameters
     for(int i=0; i<spaceDim; ++i){
@@ -134,7 +134,7 @@ bool GenerateDSTrajectoy::loadDMPparamsFromFile(std::string fileName, int spaceD
         rosbag::View viewPos(bagPos, rosbag::TopicQuery(topics[0]));
 
         foreach(rosbag::MessageInstance const m, viewPos){
-            LWR_seed_control::DMPData::ConstPtr s = m.instantiate<LWR_seed_control::DMPData>();
+            lwr_seed_control::DMPData::ConstPtr s = m.instantiate<lwr_seed_control::DMPData>();
             if (s != NULL){
                 curr_dmp->weights = s->weights;
                 curr_dmp->k_gain = s->k_gain;
@@ -167,7 +167,7 @@ bool GenerateDSTrajectoy::loadDMPparamsFromFile(std::string fileName, int spaceD
             rosbag::View viewOri(bagOri, rosbag::TopicQuery(topics[1]));
 
             foreach(rosbag::MessageInstance const m, viewOri){
-                LWR_seed_control::DMPData::ConstPtr s = m.instantiate<LWR_seed_control::DMPData>();
+                lwr_seed_control::DMPData::ConstPtr s = m.instantiate<lwr_seed_control::DMPData>();
                 if (s != NULL){
                     curr_dmp->weights = s->weights;
                     curr_dmp->k_gain = s->k_gain;
@@ -335,7 +335,7 @@ int GenerateDSTrajectoy::vectorMatrixToDmpTraj(std::vector< std::vector<double> 
     // Store new data
     size_t spaceDim = points[0].size(); // Assume position only is provided
     std::cout << "TrainDMP space dimension: " << spaceDim << std::endl;
-    LWR_seed_control::DMPPoint tmpPoint;
+    lwr_seed_control::DMPPoint tmpPoint;
     for(size_t j=0; j<spaceDim; ++j){
         tmpPoint.positions.push_back(0.0);
         tmpPoint.velocities.push_back(0.0);
@@ -369,7 +369,7 @@ void GenerateDSTrajectoy::DMPTrajectory(vector<double> currFrame, double current
 }
 
 
-void GenerateDSTrajectoy::computeNextStateDMP( std::vector<LWR_seed_control::DMPData> dmpList,
+void GenerateDSTrajectoy::computeNextStateDMP( std::vector<lwr_seed_control::DMPData> dmpList,
                                                vector<double> currentState,
                                                vector<double> goal,
                                                vector<double> initialState,

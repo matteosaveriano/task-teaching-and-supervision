@@ -1,4 +1,4 @@
-#include "LWR_seed_control/robotBehaviourManager.h"
+#include "lwr_seed_control/robotBehaviourManager.h"
 #include "std_msgs/String.h"
 
 #include <signal.h>
@@ -27,7 +27,7 @@ void faultHandler(int sig){
         printf("[bt] #%d %s\n", i, messages[i]);
         char syscom[256];
         std::stringstream commLine;
-        commLine << "addr2line %p -e " << "/home/hwadong/cotesys-Matteo/multimodal_interaction_and_teaching/LWR_seed_control/bin/executeTask";
+        commLine << "addr2line %p -e " << "/home/hwadong/cotesys-Matteo/multimodal_interaction_and_teaching/lwr_seed_control/bin/executeTask";
         sprintf(syscom, commLine.str().c_str() , trace[i]); //last parameter is the name of this app
         //std::cout<<syscom<<"\n";
         system(syscom);
@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
     robotBehaviourManager *behMan = new robotBehaviourManager(node, objectFile);
 
     // Load task
-    std::string packPath = ros::package::getPath("LWR_seed_control");
+    std::string packPath = ros::package::getPath("lwr_seed_control");
     //std::string task = "/data/addWater/";
     std::string task = "/data/prepareCoffee/";
     //std::string task = "/data/prepareTea/";

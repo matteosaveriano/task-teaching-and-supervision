@@ -1,4 +1,4 @@
-#include "LWR_seed_control/robotBehaviourManager.h"
+#include "lwr_seed_control/robotBehaviourManager.h"
 
 robotBehaviourManager::robotBehaviourManager( ros::NodeHandle node,
                                               string objectListFile,
@@ -8,7 +8,7 @@ robotBehaviourManager::robotBehaviourManager( ros::NodeHandle node,
                                               string taskStateTopicName ):behNode(node)
 {
     // Robot control object
-    std::string packPath = ros::package::getPath("LWR_seed_control");
+    std::string packPath = ros::package::getPath("lwr_seed_control");
     robCtrl = new robotControl(behNode, 0.005);
 
     // Command interpreter object

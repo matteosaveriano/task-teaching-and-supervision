@@ -1,4 +1,4 @@
-#include "LWR_seed_control/robotControl.h"
+#include "lwr_seed_control/robotControl.h"
 
 robotControl::robotControl(ros::NodeHandle node, double samplingTime):node_(node)
 {

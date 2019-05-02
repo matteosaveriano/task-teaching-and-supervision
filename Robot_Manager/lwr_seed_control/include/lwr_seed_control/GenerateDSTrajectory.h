@@ -9,9 +9,9 @@
 #include <vector>
 #include <Eigen/Dense>
 
-#include "LWR_seed_control/DMPData.h"
+#include "lwr_seed_control/DMPData.h"
 
-#include "LWR_seed_control/DMP/dmp.h"
+#include "lwr_seed_control/DMP/dmp.h"
 #include "std_msgs/Float64.h"
 #include <std_msgs/Float64MultiArray.h>
 
@@ -166,7 +166,7 @@ private:
     bool computePositionDMP(vector<double> currFrame, double currTime);
     bool computeOrientationDMP(vector<double> currFrame, double currTime);
 
-    void computeNextStateDMP( std::vector<LWR_seed_control::DMPData> dmpList,
+    void computeNextStateDMP( std::vector<lwr_seed_control::DMPData> dmpList,
                               vector<double> currentState,
                               vector<double> goal,
                               vector<double> initialState,
@@ -190,9 +190,9 @@ private:
     bool useOri_;
 
     // DMP objects
-    LWR_seed_control::DMPTraj dmpInputData;
-    std::vector<LWR_seed_control::DMPData> dmpPosition;
-    std::vector<LWR_seed_control::DMPData> dmpOrientation;
+    lwr_seed_control::DMPTraj dmpInputData;
+    std::vector<lwr_seed_control::DMPData> dmpPosition;
+    std::vector<lwr_seed_control::DMPData> dmpOrientation;
     std::vector<double> kGainsPos, dGainsPos, kGainsOri, dGainsOri;
     std::vector<double> currDmpVelocity, currDmpAngVelocity, dmpInitPos, dmpInitOri;
     double dmpTime, tauDmp;

@@ -16,8 +16,8 @@
 
 #include <Eigen/Dense>
 
-#include "LWR_seed_control/GenerateDSTrajectory.h"
-#include "LWR_seed_control/spline.h"
+#include "lwr_seed_control/GenerateDSTrajectory.h"
+#include "lwr_seed_control/spline.h"
 
 #ifndef CART_FRM_DIM
 #define CART_FRM_DIM 12

@@ -41,7 +41,7 @@
 #ifndef LINEAR_APPROX_H_
 #define LINEAR_APPROX_H_
 
-#include "LWR_seed_control/DMP/function_approx.h"
+#include "lwr_seed_control/DMP/function_approx.h"
 #include <iostream>
 
 namespace  DMP_RosWrapper{

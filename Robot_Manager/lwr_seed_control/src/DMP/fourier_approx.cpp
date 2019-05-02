@@ -39,52 +39,42 @@
   */
 
 
-#include "LWR_seed_control/DMP/radial_approx.h"
+#include "lwr_seed_control/DMP/fourier_approx.h"
 #include<stdio.h>
 using namespace Eigen;
 using namespace std;
 
 namespace  DMP_RosWrapper{
 
-RadialApprox::RadialApprox(int num_bases, double base_width, double alpha)
+FourierApprox::FourierApprox(int order)
 {
-	n_bases = num_bases;
+	n_bases = order + 1;	 //Univariate Fourier has order-many bases plus a constant basis
 	features = new double[n_bases];
-	centers = new double[n_bases];
-	widths = new double[n_bases];
 	weights.resize(n_bases);
 	for(int i=0; i<n_bases; i++){
 		features[i] = 0;
-		centers[i] = exp((-alpha*i)/n_bases);
-		widths[i] = base_width * (1/exp((-alpha*i)/n_bases));
 	}
 }
 
 
-RadialApprox::RadialApprox(const vector<double> &w, double base_width, double alpha)
+FourierApprox::FourierApprox(const vector<double> &w)
 {
 	weights = w;
 	n_bases = w.size();
 	features = new double[n_bases];
-		centers = new double[n_bases];
-		widths = new double[n_bases];
-		for(int i=0; i<n_bases; i++){
-			features[i] = 0;
-			centers[i] = ((double)i)/((double)n_bases);  //exp((-alpha*i)/n_bases);
-			widths[i] = base_width; //base_width * exp((-alpha*i)/n_bases);
-		}
+	for(int i=0; i<n_bases; i++){
+		features[i] = 0;
+	}
 }
 
 
-RadialApprox::~RadialApprox()
+FourierApprox::~FourierApprox()
 {
 	delete[] features;
-	delete[] centers;
-	delete[] widths;
 }
 
 
-double RadialApprox::evalAt(double x)
+double FourierApprox::evalAt(double x)
 {
 	calcFeatures(x);
 
@@ -96,7 +86,7 @@ double RadialApprox::evalAt(double x)
 }
 
 
-void RadialApprox::leastSquaresWeights(double *X, double *Y, int n_pts)
+void FourierApprox::leastSquaresWeights(double *X, double *Y, int n_pts)
 {
 	MatrixXd D_mat = MatrixXd(n_pts,n_bases);
 	MatrixXd Y_mat = MatrixXd(n_pts,1);
@@ -118,20 +108,16 @@ void RadialApprox::leastSquaresWeights(double *X, double *Y, int n_pts)
 }
 
 
-void RadialApprox::calcFeatures(double x)
+void FourierApprox::calcFeatures(double x)
 {
-	double sum = 0;
+    double myPI_ = 3.14159265359;
 	for(int i=0; i<n_bases; i++){
-		features[i] = exp(-widths[i]*(x-centers[i])*(x-centers[i]));
-		sum += features[i];
-	}
-	for(int i=0; i<n_bases; i++){
-		features[i] /= sum;
+		features[i] = cos(myPI_*i*x);
 	}
 }
 
 
-MatrixXd RadialApprox::pseudoinverse(MatrixXd mat){
+MatrixXd FourierApprox::pseudoinverse(MatrixXd mat){
 	//Numpy uses 1e-15 by default.  I use 1e-10 just to be safe.
 	double precisionCutoff = 1e-10;
 

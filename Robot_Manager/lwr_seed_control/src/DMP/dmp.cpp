@@ -39,7 +39,7 @@
   */
 
 
-#include "LWR_seed_control/DMP/dmp.h"
+#include "lwr_seed_control/DMP/dmp.h"
 using namespace std;
 
 namespace  DMP_RosWrapper{
@@ -68,11 +68,11 @@ double calcPhase(double curr_time, double tau)
  * @param[in] num_bases The number of basis functions to use for the fxn approx (i.e. the order of the Fourier series)
  * @param[out] dmp_list An n-dim list of DMPs that are all linked by a single canonical (phase) system
  */
-void learnFromDemo(const LWR_seed_control::DMPTraj &demo,
+void learnFromDemo(const lwr_seed_control::DMPTraj &demo,
 				   const vector<double> &k_gains,
 				   const vector<double> &d_gains,
 				   const int &num_bases,
-                   vector<LWR_seed_control::DMPData> &dmp_list)
+                   vector<lwr_seed_control::DMPData> &dmp_list)
 {
 	//Determine traj length and dim
 	int n_pts = demo.points.size();
@@ -121,7 +121,7 @@ void learnFromDemo(const LWR_seed_control::DMPTraj &demo,
 		f_approx->leastSquaresWeights(f_domain, f_targets, n_pts);
 
 		//Create the DMP structures
-        LWR_seed_control::DMPData *curr_dmp = new LWR_seed_control::DMPData();
+        lwr_seed_control::DMPData *curr_dmp = new lwr_seed_control::DMPData();
 		curr_dmp->weights = f_approx->getWeights();
 		curr_dmp->k_gain = curr_k;
 		curr_dmp->d_gain = curr_d;
@@ -157,7 +157,7 @@ void learnFromDemo(const LWR_seed_control::DMPTraj &demo,
  * @param[out] plan An n-dim plan starting from x_0
  * @param[out] at_goal True if the final time is greater than tau AND the planned position is within goal_thresh of the goal
  */
-void generatePlan(const vector<LWR_seed_control::DMPData> &dmp_list,
+void generatePlan(const vector<lwr_seed_control::DMPData> &dmp_list,
 				  const vector<double> &x_0,
 				  const vector<double> &x_dot_0,
 				  const double &t_0,
@@ -167,7 +167,7 @@ void generatePlan(const vector<LWR_seed_control::DMPData> &dmp_list,
 				  const double &tau,
 				  const double &total_dt,
 				  const int &integrate_iter,
-                  LWR_seed_control::DMPTraj &plan,
+                  lwr_seed_control::DMPTraj &plan,
 				  uint8_t &at_goal)
 {
 	plan.points.clear();

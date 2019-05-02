@@ -15,7 +15,7 @@
  *     copyright notice, this list of conditions and the following
  *     disclaimer in the documentation and/or other materials provided
  *     with the distribution.
- *   * Neither the name of the Robert Bosch nor the names of its
+ *   * Neither the name of Willow Garage nor the names of its
  *     contributors may be used to endorse or promote products derived
  *     from this software without specific prior written permission.
  *
@@ -38,10 +38,10 @@
   * \author Scott Niekum
   */
 
-#ifndef RADIAL_APPROX_H_
-#define RADIAL_APPROX_H_
+#ifndef FOURIER_APPROX_H_
+#define FOURIER_APPROX_H_
 
-#include "LWR_seed_control/DMP/function_approx.h"
+#include "lwr_seed_control/DMP/function_approx.h"
 #include <iostream>
 #include <Eigen/Core>
 #include <Eigen/SVD>
@@ -49,12 +49,12 @@
 
 namespace  DMP_RosWrapper{
 
-/// Class for linear function approximation with the univariate Radial basis
-class RadialApprox : public FunctionApprox{
+/// Class for linear function approximation with the univariate Fourier basis
+class FourierApprox : public FunctionApprox{
 public:
-	RadialApprox(int num_bases, double base_width, double alpha);
-	RadialApprox(const std::vector<double> &w, double base_width, double alpha);
-	virtual ~RadialApprox();
+	FourierApprox(int order);
+	FourierApprox(const std::vector<double> &w);
+	virtual ~FourierApprox();
 
 	/**\brief Evaluate the function approximator at point x
 	 * \param x The point at which to evaluate
@@ -69,7 +69,7 @@ public:
 	virtual void leastSquaresWeights(double *X, double *Y, int n_pts);
 
 private:
-	/**\brief Calculate the Radial basis features at point x
+	/**\brief Calculate the Fourier basis features at point x
 	 * \param x The point at which to get features
 	 */
 	void calcFeatures(double x);
@@ -81,11 +81,9 @@ private:
 	Eigen::MatrixXd pseudoinverse(Eigen::MatrixXd mat);
 
 	double *features;  //Storage for a set of features
-	double *centers;   //Centers of RBFs
-	double *widths;    //Widths of RBFs
 
 };
 
 }
 
-#endif /* RADIAL_APPROX_H_ */
+#endif /* FOURIER_APPROX_H_ */

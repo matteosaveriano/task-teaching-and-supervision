@@ -1,84 +1,61 @@
-cmake_minimum_required(VERSION 2.4.6)
-include($ENV{ROS_ROOT}/core/rosbuild/rosbuild.cmake)
+cmake_minimum_required(VERSION 2.8.3)
+project(seed_segment)
 
-rosbuild_init()
+find_package(cmake_modules REQUIRED)
+find_package(catkin REQUIRED COMPONENTS roscpp rospy roslib geometry_msgs nav_msgs tf message_generation)
+find_package(Eigen3 REQUIRED)
+find_package(OpenCV)
 
-#set the default path for built executables to the "bin" directory
-set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
-#set the default path for built libraries to the "lib" directory
-set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
+set(ECLIPSE_SEED_DIR ${PROJECT_SOURCE_DIR}/eclipseclp )
+set(ECLIPSE_HEADER_PATH ${PROJECT_SOURCE_DIR}/eclipseclp/include/x86_64_linux )
 
-#uncomment if you have defined messages
-rosbuild_genmsg()
+include_directories(${catkin_INCLUDE_DIRS} ${ECLIPSE_HEADER_PATH} ${POMDP_HEADER_PATH} ${EIGEN3_INCLUDE_DIRS} ${OpenCV_INCLUDE_DIRS})
+link_directories(${catkin_LIBRARY_DIRS})
 
+# MESSAGES
+add_message_files(FILES AllObject.msg  Object.msg  ResultField.msg  Result.msg)
+generate_messages(DEPENDENCIES geometry_msgs nav_msgs)
 
-# -g gives information for the sigsegv-backtrace
-#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g" )
-
-
-##---Header
-#Set location of the .h files for eclipse prolog, player/stage, Open-prs and Pompd
-#SET( ECLIPSE_HEADER_PATH $ENV{HOME}/devel/src/eclipseclp/include/x86_64_linux )
-set( ECLIPSE_SEED_DIR ${PROJECT_SOURCE_DIR}/eclipseclp )
-set( ECLIPSE_HEADER_PATH ${PROJECT_SOURCE_DIR}/eclipseclp/include/x86_64_linux )
-#SET( OPRS_HEADER_PATH		 $ENV{ROBOTPKG_BASE}/include/openprs )
-#---
-
-include_directories( ${ECLIPSE_HEADER_PATH} )
-include_directories( ${POMDP_HEADER_PATH} )
-#include_directories( ${OPRS_HEADER_PATH} )
-
-
-set( EXTERNAL_LIBS
-	eclipse
-	gmp
-	#ExtMP
-	opencv_core 
-	opencv_highgui
-
+catkin_package(
+  INCLUDE_DIRS
+  LIBRARIES
+  CATKIN_DEPENDS
+    roscpp
+    roslib
+    rospy
+    geometry_msgs
+    nav_msgs
+    tf
+	message_runtime
+  DEPENDS
+    EIGEN3
 )
-
-## Declare a cpp library
-# add_library(seed_2_0
-#   src/${PROJECT_NAME}/seed_2_0.cpp
-# )
 
 ## Declare a cpp executable
 set( SEED_SRC
-	src/seed_wakeUp.cpp
+	 src/seed_wakeUp.cpp
+     src/behaviour/SAPHARI/multimodal_hri_framework/AlfredDialogueManager/POMDP.cpp
+	 src/behaviour/SAPHARI/multimodal_hri_framework/AlfredDialogueManager/POMDPState.cpp
+     src/behaviour/SAPHARI/multimodal_hri_framework/AlfredDialogueManager/Observ.cpp
+     src/behaviour/SAPHARI/multimodal_hri_framework/AlfredDialogueManager/DialogFlow.cpp
+     src/behaviour/SAPHARI/multimodal_hri_framework/AlfredDialogueManager/FlowState.cpp
+     src/behaviour/SAPHARI/multimodal_hri_framework/AlfredDialogueManager/tinyxml2.cpp
 )
 
 
 add_definitions( -D__LINUX__ )
 
-rosbuild_add_executable(seed_segment 
-        src/seed.cpp
-        src/behaviour/SAPHARI/multimodal_hri_framework/AlfredDialogueManager/POMDP.cpp
-	src/behaviour/SAPHARI/multimodal_hri_framework/AlfredDialogueManager/POMDPState.cpp
-        src/behaviour/SAPHARI/multimodal_hri_framework/AlfredDialogueManager/Observ.cpp
-        src/behaviour/SAPHARI/multimodal_hri_framework/AlfredDialogueManager/DialogFlow.cpp
-        src/behaviour/SAPHARI/multimodal_hri_framework/AlfredDialogueManager/FlowState.cpp
-        src/behaviour/SAPHARI/multimodal_hri_framework/AlfredDialogueManager/tinyxml2.cpp
-        ${SEED_SRC})
-
-## Add cmake target dependencies of the executable/library
-## as an example, message headers may need to be generated before nodes
-# add_dependencies(seed_2_0_node seed_2_0_generate_messages_cpp)
-
-## Specify libraries to link a library or executable target against
-target_link_libraries(seed_segment  #${EXTERNAL_LIBS} #${catkin_LIBRARIES} # ${EXTERNAL_LIBS}
-	#$ENV{ROBOTPKG_BASE}/lib/libExtMP.a 	
-	opencv_core 
-	opencv_highgui
-    	#$ENV{HOME}/devel/src/eclipseclp/lib/x86_64_linux/libeclipse.so
-    	${PROJECT_SOURCE_DIR}/eclipseclp/lib/x86_64_linux/libeclipse.so
-    	gmp)
-
-
-find_package(cmake_modules REQUIRED)
-find_package(Eigen REQUIRED)
-include_directories(${Boost_INCLUDE_DIR} ${EIGEN_INCLUDE_DIRS})
-
+add_executable(seed_segment src/seed.cpp ${SEED_SRC})
+add_dependencies(seed_segment ${${PROJECT_NAME}_EXPORTED_TARGETS}) # Tell catkin to compile the messages first
+target_link_libraries( seed_segment  	
+					   ${catkin_LIBRARIES} 
+	                   ${OpenCV_LIBRARIES}
+    	               ${PROJECT_SOURCE_DIR}/eclipseclp/lib/x86_64_linux/libeclipse.so
+    	               gmp
+					   -lgvc
+                       -lcgraph
+                       -lcdt
+)
 
 # COMMENT/UNCOMMENT to remove/add GRAPHVIZ (show(_) behaviour)
 # Use the package PkgConfig to detect GRAPHVIZ headers/library files
@@ -94,4 +71,4 @@ include_directories(${Boost_INCLUDE_DIR} ${EIGEN_INCLUDE_DIRS})
 # Add other flags to the compiler
 #add_definitions(${GTK3_CFLAGS_OTHER})
 # Link the target to the GRAPHVIZ libraries
-target_link_libraries( seed_segment -lgvc -lcgraph -lcdt)
+#target_link_libraries( seed_segment -lgvc -lcgraph -lcdt)
