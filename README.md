@@ -22,13 +22,8 @@ Make also sure to have Graphviz (```sudo apt-get install graphviz-dev```), Gmp (
 ros-<version>-ar-track-alvar```) installed.
 - _Attentional System_:
   - Open a terminal shell
-  - ```roscd Attentional_System``` (Navigate to the folder _Attentional_System_)
-  - ```cd Attentional_System/seed_segment```
-  - ```mkdir build```
-  - ```cd build```
-  - ```cmake ..```
-  - ```cd ..```
-  - ```rosmake```
+  - Navigate to the catkin workspace folder (typically ```cd ~/catkin_ws```)
+  - ```catkin_make seed_segment```
   
 _NOTE:_  The compiler assumes that ```libgmp.so.3``` is in ```/usr/lib```. Otherwise, the _Attentional System_ node does not compile, or you will experience a run-time error like: ```error while loading shared libraries: libgmp.so.3: cannot open shared object file: No such file or directory```. This issue can be solved by making a simbolic link to your system version of ```libgmp.so.3```.
   
@@ -37,28 +32,14 @@ For example, assuming that ```libgmp.so.10``` is installed in ```/usr/lib64```, 
 
 - _Robot Manager_:
   - Open a terminal shell
-  - ```roscd Robot_Manager``` (Navigate to the folder _Robot_Manager_)
-  - ```cd Robot_Manager/kuka_seed_commands```
-  - ```mkdir build```
-  - ```cd build```
-  - ```cmake ..```
-  - ```cd ..```
-  - ```rosmake```
-  - ```roscd Robot_Manager``` (Navigate to the folder _Robot_Manager_)
-  - ```cd Robot_Manager/lwr_seed_control```
-  - ```mkdir build```
-  - ```cd build```
-  - ```cmake ..```
-  - ```cd ..```
-  - ```rosmake```
+  - Navigate to the catkin workspace folder (typically ```cd ~/catkin_ws```)
+  - ```catkin_make kuka_seed_commands```
+  - ```catkin_make lwr_seed_control```
+
 - _LWR Simulator_:
   - Open a terminal shell
-  - ```roscd lwr_rviz_visualization``` (Navigate to the folder _lwr_rviz_visualization_)
-  - ```mkdir build```
-  - ```cd build```
-  - ```cmake ..```
-  - ```cd ..```
-  - ```rosmake```
+  - Navigate to the catkin workspace folder (typically ```cd ~/catkin_ws```)
+  - ```catkin_make lwr_rviz_visualization```
 
 ## Usage
 We prepared a demo version collecting a user demonstration of the prepare coffee task. Data are stored
