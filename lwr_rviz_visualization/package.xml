@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>lwr_rviz_visualization</name>
+  <version>0.1.0</version>
+  <description>Visualize the LWR4+ in rviz</description>
+
+  <maintainer email="matteo.saveriano@tum.de">Matteo Saveriano</maintainer>
+
+  <!-- One license tag required, multiple allowed, one license per tag -->
+  <!-- Commonly used license strings: -->
+  <!--   BSD, MIT, Boost Software License, GPLv2, GPLv3, LGPLv2.1, LGPLv3 -->
+  <license>BSD</license>
+
+
+
+  <!-- The *depend tags are used to specify dependencies -->
+  <!-- Dependencies can be catkin packages or system dependencies -->
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>xacro</build_depend>
+  <build_export_depend>xacro</build_export_depend>
+  <exec_depend>xacro</exec_depend>
+</package>

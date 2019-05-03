@@ -1,4 +1,5 @@
-<package>
+<?xml version="1.0"?>
+<package format="2">
   <name>kuka_seed_commands</name>
   <description>kuka_seed_coomands</description>
   <maintainer email="matteo.saveriano@tum.de">Matteo Saveriano</maintainer>
@@ -7,6 +8,7 @@
   <license>BSD</license>
   <url></url>
   <buildtool_depend>catkin</buildtool_depend>
+
   <build_depend>roscpp</build_depend>
   <build_depend>rospy</build_depend>
   <build_depend>roslib</build_depend>
@@ -15,12 +17,22 @@
   <build_depend>tf</build_depend>
   <build_depend>ar_track_alvar</build_depend>
   <build_depend>ar_track_alvar_msgs</build_depend>
-  <run_depend>roscpp</run_depend>
-  <run_depend>rospy</run_depend>
-  <run_depend>roslib</run_depend>
-  <run_depend>std_msgs</run_depend>
-  <run_depend>geometry_msgs</run_depend>
-  <run_depend>tf</run_depend>
-  <run_depend>ar_track_alvar</run_depend>
-  <run_depend>ar_track_alvar_msgs</run_depend>
+
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>rospy</build_export_depend>
+  <build_export_depend>roslib</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <build_export_depend>geometry_msgs</build_export_depend>
+  <build_export_depend>tf</build_export_depend>
+  <build_export_depend>ar_track_alvar</build_export_depend>
+  <build_export_depend>ar_track_alvar_msgs</build_export_depend>
+
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>roslib</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>tf</exec_depend>
+  <exec_depend>ar_track_alvar</exec_depend>
+  <exec_depend>ar_track_alvar_msgs</exec_depend>
 </package>

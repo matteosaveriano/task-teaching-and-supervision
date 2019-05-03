@@ -1,4 +1,5 @@
-<package>
+<?xml version="1.0"?>
+<package format="2">
   <name>lwr_seed_control</name>
   <description>lwr_seed_control</description>
   <maintainer email="matteo.saveriano@tum.de">Matteo Saveriano</maintainer>
@@ -7,6 +8,7 @@
   <license>BSD</license>
   <url></url>
   <buildtool_depend>catkin</buildtool_depend>
+
   <build_depend>roscpp</build_depend>
   <build_depend>rospy</build_depend>
   <build_depend>roslib</build_depend>
@@ -15,16 +17,24 @@
   <build_depend>tf</build_depend>
   <build_depend>kuka_seed_commands</build_depend>
   <build_depend>kdl_parser</build_depend>
-  <build_depend>rodyman_msgs</build_depend>
   <build_depend>message_generation</build_depend>
-  <run_depend>message_runtime</run_depend>
-  <run_depend>roscpp</run_depend>
-  <run_depend>rospy</run_depend>
-  <run_depend>roslib</run_depend>
-  <run_depend>std_msgs</run_depend>
-  <run_depend>eigen</run_depend>
-  <run_depend>tf</run_depend>
-  <run_depend>kuka_seed_commands</run_depend>
-  <run_depend>kdl_parser</run_depend>
-  <run_depend>rodyman_msgs</run_depend>
+
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>rospy</build_export_depend>
+  <build_export_depend>roslib</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <build_export_depend>eigen</build_export_depend>
+  <build_export_depend>tf</build_export_depend>
+  <build_export_depend>kuka_seed_commands</build_export_depend>
+  <build_export_depend>kdl_parser</build_export_depend>
+
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>roslib</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>eigen</exec_depend>
+  <exec_depend>tf</exec_depend>
+  <exec_depend>kuka_seed_commands</exec_depend>
+  <exec_depend>kdl_parser</exec_depend>
+  <exec_depend>message_runtime</exec_depend>
 </package>
