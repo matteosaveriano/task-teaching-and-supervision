@@ -20,7 +20,7 @@
   <node pkg="tf" type="static_transform_publisher" name="wsg50_end_link" args="0 0 0.15 2.357 0 0 /wsg50_gripper_base_link /wsg50_end_link 100" />
   
   <!-- Publish ar_marker message -->
-  <node name="objectsSimulator" pkg="kuka_seed_commands" type="objectsSimulator" args="" output="screen" />
+  <node name="kuka_seed_commands" pkg="kuka_seed_commands" type="kuka_seed_commands" args="" output="screen" />
   <rosparam> publish_end_effector: false </rosparam>
 
   <!-- Robot state publisher - Transform joint angles to tf frames -->
