@@ -51,7 +51,7 @@ extern pthread_mutex_t memMutex;
 extern std::string SYS_HOME_PATH;
 extern std::string SEED_HOME_PATH;
 
-//FUNZIONI DI SUPPORTO
+// Utility functions
 std::string functor2string(EC_word);
 std::vector<std::string> instance2vector(std::string);    
 void printList(EC_word);
@@ -61,8 +61,8 @@ float r2d( float rad );
 float d2r( float deg );
 
       
-//DEFINIZIONE DELLE CLASSI   
-//HashMap delle variabili nella memoria di lavoro
+// Class definitions   
+// Working Memory (WM) variables' hash map
 class WM_varMap {
 public:
 
@@ -118,23 +118,14 @@ public:
             return T();
         }
     }
-private:
-//    /*  mappa delle variabili di tipo double*/
-//    std::map<std::string,double> d;
-//    /*  mappa delle variabili di tipo int*/
-//    std::map<std::string,int> i;
-//    /*  mappa delle variabili di tipo std::string*/
-//    std::map<std::string,std::string> s;
-//    /*  mappa delle variabili di tipo bool*/
-//    std::map<std::string,bool> b;
-    
-    /* mappa unica delle variabili*/
+private:   
+    /* Unique map for all WM variables */
     std::map<std::string,void*> p;
 };
 
 extern WM_varMap WMV;
 
-    //nodo della memoria di lavoro
+// WM node (of the tree) class
 class WM_node{
 public:
     WM_node(std::string newInstance, WM_node* instanceFather){
@@ -156,55 +147,55 @@ public:
         freezed=false;
         internalReleaser=true;
     }
-    //nome dello schema
+    // Name of the schema
     std::string name;
-    //istanza dello schema (ie. nome+parametri)
+    // Instance of the schema (ie. name+parameters)
     std::string instance;
-    //releaser: elenco delle variabili della memoria legate in AND
+    // Releaser: list of WM variables (in AND)
     std::vector<std::string> releaser;
-    //magnitudine (calcolata dalla WM)
+    // Magnitude (computed by the WM)
     double magnitude;
-    //magnitudine dello schema (acquisita dalla definizione semantica)
+    // Magnitude of the schema (acquired by the semantic function)
     double ltMagnitude;
-    //amplificazione della magnitudine (acquisita dall'esecuzione)
+    // Amplification of the magnitude (acquired during the execution)
     double amplification;
-    //numero delle volte che si è raggiunto il goal
+    // Number of times a goal is achieved
     double goalCount;
-    //ritmo attuale del behaviour (ha solo valore descrittivo)
+    // Current rithm of the node (behaviour)
     double rtm;
-    //lenco dei nodi figli
+    // List of child nodes
     std::vector< WM_node*> son;
-    //puntatore al nodo padre
+    // Pointer to the father node
     WM_node *father;
-    //discriminatore dell'astrazione dello schema
+    // Determine if the schema is abstract or not
     bool abstract;
-    //vero se il nodo è stato espanso
+    // TRUE if the node has been expanded
     bool expanded;
-    //vero se il nodo è goal oriented
+    // TRUE if the node is goal oriented
     bool teleological;
-    //vero se il nodo è da amplificare
+    // TRUE if the node has to be amplified
     bool amplified;
-    //goal: elenco delle variabili della memoria legate in AND
+    // goal: list of WM variables (in AND)
     std::vector<std::string> goal;
-    //istanza del comportamento che ha la prelazione sulla comunicazione
+    // Winning node (winner-take-all strategy used to choose among the active nodes)
     std::string winner;
-    //vecchia istanza con prelazione
+    // Old winning node
     std::string oldWinner;
-    //periodo dell'istanza con prelazione
+    // Period of the winning node
     double winnerRtm;
-    //magnitudine dell'istanza con prelazione
+    // Magnitude of the winning node
     double winnerMag;
-    //lista dei contendenti al behaviour (fifo), la testa è il winner
+    // List (FIFO) of competeng nodes. The head of the list contains the winner
     std::vector<std::string> contenders;
-    //valore di dissolvenza, quando arriva a 0 il nodo viene scordato
+    // Fade value. The node is canceled if fading = 0
     double fading;
-    //vero se il nodo è bloccato (ie. non puo attivare lo schema motorio)
+    // TRUE if the node is frozen (ie. the node cannot achivate the motor schema)
     bool freezed;
-    //vero se il releaser interno del processo associato è vero
+    // TRUE if the releaser of the behaviour is true
     bool internalReleaser;
-    /** funzione che trasforma un sottoalbero in una lista di nodi
+    /** Function that transforms a sub-tree into a list of nodes
      * 
-     * @return la lista di tutti i nodi nel sottoalbero radicato 
+     * @return list of nodes in the sub-tree
      */
     std::vector<WM_node *> tree2list(){
         std::vector<WM_node *> nodeList;
@@ -217,34 +208,34 @@ public:
         return nodeList;
     }
     
-    /** funzione di computo della magnitudine per l'istanza
+    /** Function to calculate the magnitude of the node
      * 
-     * @param instanceToFind l'istanza del behaviour di cui calcolare la
-     *  magnitudine
-     * @return la magnitudine totale di tutti i behaviour attivi (rilasciati)
-     *  aventi come istanza "instanceToFind" 
+     * @param instanceToFind instance of the considered behaviour 
+
+     * @return total magnitude of all the active behaviours (released)
+     *  having "instanceToFind" as instance
      */
     double getInstanceMagnitude(std::string instanceToFind){
         double totalMagnitude=0;
-        //NON SOMMARE LE ALTRE ISTANZE
+        // Do not sum up the instances 
         return 1;
-        //se sono rilasciato allora ( NB il controllo sul goal è stato aggiunto dopo)
+        // If released then ...
         if(this->releaserStatus() && !this->goalStatus()){
-            //se io sono il nodo cercato
+            // If this->instance is the desired instance
             if(this->instance == instanceToFind)
-                //salva la mia magnitudine
+                // Store the magnitude of the desired instance
                 totalMagnitude+=magnitude+amplification;   
-            //controlla se tra i miei figli vi sono istanze
+            // Check if the children have instances of the same behaviour 
             for(int i=0;i<son.size();i++)
-                //somma la magnitudine delle istanze nel sottoalbero
+                // Sum the magnitude of all the instances in the sub-tree
                 totalMagnitude+=son[i]->getInstanceMagnitude(instanceToFind);
         }
-        //ritorna il totale
+        // Return the total magnitude
         return totalMagnitude;
     }
-    /** funzione di controllo del goal
+    /** Function to check if the goal is achieved
      * 
-     * @return TRUE se il goal del nodo è vero
+     * @return TRUE if the goal of the node has been achieved
      */
     bool goalStatus(){
         int i=0;
@@ -252,14 +243,14 @@ public:
         char c;
         bool isTrue=true;
         std::string app;
-        //se il nodo non è teleologico il goal è sempre falso
+        // If the node is not teleological the goal is always FALSE
         if(!this->teleological) return false;
-        //mentre il vettore non è finito ed il goal è vero
-        while(i<goal.size() && isTrue){
+        
+	while(i<goal.size() && isTrue){
             var = WMV.get<double>(goal[i]);
-            //se l'iesimo elemento non è negato
+            // If the i-th element is negated
             if(goal[i][0]!='-' && 
-                    //ed e falso nella memoria allora il goal è falso
+                    // and it is FALSE in the WM then the goal is FALSE
                     var==0) isTrue=false;
             //altrimenti se è negato
             else if(goal[i][0]=='-'){
