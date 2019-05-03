@@ -4,7 +4,7 @@
 The framework for multimodal teaching and attentional supervision consists of 3 main components:
 - _Attentional System (AS)_: Cognitive control mechanism to orchestrate structured tasks execution.
 - _Robot Manager (RM)_: Segmentation, motion primitives learning, motor commands generation.
-- _Scene Simulator_: Simulate the robot and the objects in the scene.
+- _LWR Simulator (lwr_rviz_visualization)_: Simulate an LWR IV+ robot and the objects in the scene and visualize them in ```rviz```.
 
 The code is written in C++ and organized into ROS (Robotic Operating System) nodes.
 
@@ -17,7 +17,7 @@ This installation guide is for expert ROS (Robotic Operating System) users. Plea
 to get started with ROS.
 
 Before starting, make sure to have the forlders _Attentional_System_, _Robot_Manager_, and
-_Scene_Simulator_ in your ROS_PACKAGE_PATH (type in a shell ```echo $ROS_PACKAGE_PATH```).
+_lwr_rviz_visualization_ in your ROS_PACKAGE_PATH (type in a shell ```echo $ROS_PACKAGE_PATH```).
 Make also sure to have Graphviz (```sudo apt-get install graphviz-dev```), Gmp (```sudo apt-get install libgmp-dev```), Eigen (```sudo apt-get install libeigen3-dev```), ARUCO ROS package (```sudo apt-get install
 ros-<version>-ar-track-alvar```) installed.
 - _Attentional System_:
@@ -45,15 +45,15 @@ For example, assuming that ```libgmp.so.10``` is installed in ```/usr/lib64```, 
   - ```cd ..```
   - ```rosmake```
   - ```roscd Robot_Manager``` (Navigate to the folder _Robot_Manager_)
-  - ```cd Robot_Manager/LWR_seed_control```
+  - ```cd Robot_Manager/lwr_seed_control```
   - ```mkdir build```
   - ```cd build```
   - ```cmake ..```
   - ```cd ..```
   - ```rosmake```
-- _Scene Simulator_:
+- _LWR Simulator_:
   - Open a terminal shell
-  - ```roscd Scene_Simulator``` (Navigate to the folder _Scene_Simulator_)
+  - ```roscd lwr_rviz_visualization``` (Navigate to the folder _lwr_rviz_visualization_)
   - ```mkdir build```
   - ```cd build```
   - ```cmake ..```
@@ -66,10 +66,10 @@ into the prepare_coffee.bag file.
 To reproduce the demo execute the following commands in separate shells:
 - ```roscore```
 - ```rosparam set use_sim_time true``` (no troubles with old /tf data)
-- ```roslaunch Scene_Simulator scene_simulator.launch``` (start the robot and objects simulator)
+- ```roslaunch lwr_rviz_visualization scene_simulator.launch``` (start the robot and objects simulator)
 - ```rosrun LWR_seed_control learnTask``` (start the Robot Manager)
 - ```rosrun seed_segment seed_segment``` (start the Attentional System)
-- navigate to the folder _Scene_Simulator_ and then type ```rosbag play prepare_coffee.bag --clock``` (playback the recorded data)
+- navigate to the folder _lwr_rviz_visualization_ and then type ```rosbag play prepare_coffee.bag --clock``` (playback the recorded data)
 
 After typing these commands, you will have a window showing the task structure updates and a
 simulated scene (```/tf``` frames) in Rviz. Note that the frame ```/wsg50_end_link``` represents the end
