@@ -48,7 +48,7 @@ To reproduce the demo execute the following commands in separate shells:
 - ```roscore```
 - ```rosparam set use_sim_time true``` (no troubles with old /tf data)
 - ```roslaunch lwr_rviz_visualization scene_simulator.launch``` (start the robot and objects simulator)
-- ```rosrun LWR_seed_control learnTask``` (start the Robot Manager)
+- ```rosrun lwr_seed_control learnTask``` (start the Robot Manager)
 - ```rosrun seed_segment seed_segment``` (start the Attentional System)
 - navigate to the folder _lwr_rviz_visualization_ and then type ```rosbag play prepare_coffee.bag --clock``` (playback the recorded data)
 
