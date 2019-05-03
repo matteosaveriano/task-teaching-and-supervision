@@ -15,11 +15,11 @@ pthread_mutex_t memMutex = PTHREAD_MUTEX_INITIALIZER;
 
 std::string winner("none");
     
-std::string SYS_HOME_PATH;//("/home/prisma-airobots");
-std::string SEED_HOME_PATH;//("/home/prisma-airobots/catkin_ws/src/seed");
+std::string SYS_HOME_PATH;
+std::string SEED_HOME_PATH;
     
     
-void faultHandler(int sig){
+/*void faultHandler(int sig){
     void *trace[16];
     size_t size;
     char **messages = (char **)NULL;
@@ -50,13 +50,9 @@ void faultHandler(int sig){
    
     exit(1);
 }
-
-
-
-
-/*
  * 
  */
+
 int main(int argc, char** argv) {
 
 
@@ -82,7 +78,7 @@ int main(int argc, char** argv) {
   //ec_set_option_ptr(EC_OPTION_ECLIPSEDIR, (void *)"/home/prisma-airobots/catkin_ws/src/seed/eclipseclp");
   ec_init();
   
-  //leggi la long time memory
+  // Read the long time memory
   //std::string seed_path = ros::package::getPath("seed");
   std::string LTM_path = "[\'" + SEED_HOME_PATH + "/LTM.prolog" + "\']";
   //std::cout<<"seedpath: "<<seed_path<<"\n";
@@ -91,18 +87,18 @@ int main(int argc, char** argv) {
   //ec_post_string("[\'/home/prisma-airobots/catkin_ws/src/seed/LTM.prolog\']");
   EC_resume();
   
-  signal(SIGSEGV,faultHandler);
+  //signal(SIGSEGV,faultHandler);
   
   pthread_mutex_lock(&memMutex);
   WMV.set<double>("TRUE",1);
   WMV.set<double>("FALSE",0);
   pthread_mutex_unlock(&memMutex);
   AliveBehaviour *Alive=new AliveBehaviour("alive");
-  //inizializza memoryStream
+  // Initialize memoryStream
   pthread_t thread_alive;
-  //avvia il thread
+  // Create the thread
   int memoryStream = pthread_create(&thread_alive, NULL,execution, (void *)Alive);
-  //aspetta il thread
+  // Wait until the thread is active
   pthread_join(thread_alive, NULL);
   
   return 0;  
@@ -192,7 +188,7 @@ float d2r( float deg ) {
     return deg*M_PI/180.0;
 }
 
-//trasforma in stringa un generico funtore restituito da ECLIPSE
+// Transform a string in a generic functor returned by ECLIPSE
 std::string functor2string(EC_word f){
     char* buf;
     char* st;
@@ -205,31 +201,31 @@ std::string functor2string(EC_word f){
     double d;
     int i;
     
-    //se il funtore ha arietà maggiore di zero
+    // If the functor has arity bigger than zero
     if(f.arity()!=0) 
     {
-        //estrai in nome del funtore
+        // Get the name of the functor
         f.functor(&fun);
         buf=fun.name();
         result.append(buf);
         
-        //se è un funtore punto (ie. del tipo schema.attributo)
+        // If it is a point functor (ie. like schema.attribute)
         if(result=="." && f.arity()==2)
         {
-            //svuota la stringa
+            // Empty the string
             result="";
-            //prendi lo schema
+            // Get the schema
             f.arg(1,arg);
             result.append(functor2string(arg));
-            //inseriscilo nella stringa seguito dal punto
+            // Insert the schema in the string and add a "."
             result=result+".";
-            //prendi il metodo
+            // Read and append the metodo
             f.arg(2,arg);
             result.append(functor2string(arg));      
         }
         
         else if(result=="-" && f.arity()==1){
-            //prendi il parametro ed aggiungilo alla stringa
+            // Read and append the parameter
             f.arg(1,arg);
             //arg.is_string(&buf);
             result.append(functor2string(arg));   
